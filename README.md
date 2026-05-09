@@ -19,7 +19,7 @@ Since Group 8 is an even-numbered group, we use:
 ## Selected Baseline Models
 
 - Qwen/Qwen2.5-1.5B-Instruct
-- meta-llama/Llama-3.2-1B-Instruct
+- google/gemma-2-2b-it
 
 ## Deadline 1 Goal
 
