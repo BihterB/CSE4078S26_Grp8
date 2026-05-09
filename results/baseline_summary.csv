@@ -1,0 +1,3 @@
+model_name,examples,avg_rouge_l,avg_tfidf_similarity,error_count,input_file
+Qwen/Qwen2.5-1.5B-Instruct,25,0.2324,0.1772,0,results/qwen_1_5b_baseline_outputs_25.csv
+google/gemma-2-2b-it,25,0.3106,0.2803,0,results/gemma_2_2b_it_baseline_outputs_25.csv
