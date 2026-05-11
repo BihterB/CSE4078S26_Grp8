@@ -12,8 +12,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Not perfect metric but enough for first progress part.
 
 INPUT_FILES = [
-    "results/qwen_1_5b_baseline_outputs_25.csv",
-    "results/gemma_2_2b_it_baseline_outputs_25.csv",
+    "results/qwen_1_5b_baseline_outputs_100.csv",
+    "results/gemma_2_2b_it_baseline_outputs_100.csv",
 ]
 
 # Summary table will be saved here.

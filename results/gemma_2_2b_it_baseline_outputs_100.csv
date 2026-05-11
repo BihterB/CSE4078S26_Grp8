@@ -1,0 +1,270 @@
+index,model_name,question,reference_answer,model_answer,error
+0,google/gemma-2-2b-it,Anayasanın 90. Maddesi Nasıl Uygulanır?,Milletlerarası antlaşmaların TBMM tarafından onaylanmasıyla uygulanır.,"Anayasanın 90. Maddesi, **""Hukuk ve yasal düzenlemeler, yasama, yürütme ve yargı organlarının görevleri ve yetkileri""** konusunda düzenlemeler yapar. Bu madde, **""Anayasa",
+1,google/gemma-2-2b-it,Hukukta 'legitimate expectation' nedir?,"Legitimate expectation, bir kişinin belirli bir eylem veya karar beklentisinin hukuken korunabilir olduğuna dair bir ilkeyi ifade eder. bu beklenti genellikle devlet veya kamu organlarının tutarlı davranışlarına dayanır.","Legitimate expectation, bir kişinin, bir kurum veya devlet tarafından belirlenen bir durum veya davranışa dair bir beklenti oluşturması durumunda ortaya çıkar. Bu beklenti, kurum veya devlet tarafından açıkça veya dolaylı olarak sunulan bir bilgi veya sözleşme yoluyla",
+2,google/gemma-2-2b-it,"Anayasa madde 172'ye göre, devletin sanayi ve ticareti destekleme konusundaki görevleri nelerdir?","Anayasa madde 172'ye göre, devlet, sanayi ve ticaretin geliştirilmesi ve rekabet gücünün artırılması için gerekli tedbirleri alır. i̇şletmelerin verimliliğini ve yenilikçiliğini artırmak için teşvik ve destekler sağlanır.","Anayasa madde 172'ye göre, devletin sanayi ve ticareti destekleme konusundaki görevleri şunlardır:
+
+* **Sanayi ve ticareti teşvik etmek:** Bu, devlet tarafından yapılan teşvikler, destekler ve yatırımlar yolu",
+3,google/gemma-2-2b-it,"Anayasa madde 158, uyuşmazlık mahkemesi'nin kuruluşu ve görevlerine müdahale hangi durumlarda yasaktır","Anayasa madde 158'e göre, uyuşmazlık mahkemesi'nin kuruluşu ve görevlerine müdahale, uyuşmazlık mahkemesi'nin adli, idari ve askeri yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözmemesi veya anayasa mahkemesi başkanı'nın başkanlığında çalışmaması durumunda yasaktır. devlet, bu tür müdahaleleri önlemek ve uyuşmazlık mahkemesi'nin kuruluşu ve görevlerini korumakla yükümlüdür.","Anayasa madde 158, uyuşmazlık mahkemesi'nin kuruluşu ve görevlerine müdahale **yasaklanan** durumlar şunlardır:
+
+* **Uyuşmazlık mahkemesi kurulması için gerekli yasal süreç",
+4,google/gemma-2-2b-it,"Bir grup avukat, Türkiye Büyük Millet Meclisi Başkanı'nın Cumhurbaşkanlığı seçimlerine katılamayacağını belirten Anayasa maddesinin iptali için başvuruda bulunmuştur. Bu başvuru Anayasanın 94. Maddesi ile nasıl çelişir?","Anayasanın 94. Maddesi, Türkiye Büyük Millet Meclisi Başkanı'nın Cumhurbaşkanlığı seçimlerine katılamayacağını belirtir. Bu maddeye aykırı bir başvuru Anayasa'ya aykırıdır.","Bu başvuru Anayasa maddesinin 94. maddesi ile çelişir. Çünkü bu maddesi, Türkiye Büyük Millet Meclisi Başkanı'nın Cumhurbaşkanlığı seçimlerine katılamayacağını belirten bir kararın Anayasa'da yer al",
+5,google/gemma-2-2b-it,Grev ve lokavt hakkının önemi nedir,"Grev ve lokavt hakkı, çalışanların ve işverenlerin toplu iş uyuşmazlıklarında haklarını savunmalarını ve taleplerini dile getirmelerini sağlar. bu haklar, işçi-işveren ilişkilerinin dengeli ve adil bir şekilde yürütülmesini destekler.","Grev ve lokavt hakkı, işçilerin iş yerinde haklarını savunma ve işverenlerin iş yükünü azaltma hakkını garanti eden temel haklar olarak kabul edilir. Bu haklar, işçilerin iş yerinde güvenli ve adil bir ortamda çalış",
+6,google/gemma-2-2b-it,"Cumhurbaşkanlığı seçimleri, Cumhurbaşkanının görev süresi dolmasına yetmiş gün kala tamamlanmıştır. Bu durum Anayasanın 102. Maddesi ile nasıl çelişir?","Anayasanın 102. Maddesi, seçimlerin görev süresinin dolmasından önceki altmış gün içinde tamamlanmasını öngörür. Yetmiş gün kala tamamlanması bu maddeye aykırıdır.","Anayasanın 102. maddesi, Cumhurbaşkanlığı seçimlerinin, Cumhurbaşkanının görev süresi dolmasına kadar tamamlanması gerektiğini belirtir. Bu durum, Cumhurbaşkanının görev süresi dolmasına 70 gün kala tamamlanması,",
+7,google/gemma-2-2b-it,Türk ceza kanunu'na göre kasten öldürme suçu nedir?,Bir kişiyi öldürme kastıyla işlenen suçtur.,"Türk Ceza Kanunu'na göre kasten öldürme suçu, **""insan hayatını doğrudan ve şiddetli bir şekilde tehdit eden bir eylem""** sonucu meydana gelen ölüm olarak tanımlanır.",
+8,google/gemma-2-2b-it,"Bir milletvekili, bir kamu idaresinin faaliyetlerini denetlemek için verdiği soru önergesine cevap alamamıştır. Bu durum Anayasanın 98. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 98. Maddesi, verilen soru önergelerinin cevaplandırılmasını öngörür. Cevap alınamaması bu maddeye aykırıdır.","**Evet, Anayasanın 98. Maddesi'ne aykırıdır.**
+
+**Açıklama:**
+
+Anayasanın 98. Maddesi, milletvekillerinin kamu idarelerinin faaliyetlerini denetlemek için soru önergesi ile sorular sor",
+9,google/gemma-2-2b-it,"Sanık, bir finans kurumunda yatırım tavsiyeleri vererek müşterileri yanıltıp zarar uğratırsa, hangi suçlamalar gündeme gelir?","Sanık, finans kurumunda yatırım tavsiyeleri vererek müşterileri yanıltıp zarar uğratırsa, 'mali dolandırıcılık', 'yanıltıcı tavsiyelerde bulunma' ve 'ticari etik kurallarının ihlali' suçlarıyla karşılaşabilir. Bu suçlar, hapis cezası ve/veya para cezası ile sonuçlanabilir ve mağdurların zararının tazmini gerekebilir.","Sanık, **yanlış bilgi ve iddia** ile müşterileri yanıltıp zarar uğratması nedeniyle **yasa dışı finansal faaliyet**, **tehlikeli finansal tavsiye** ve **müşteri hakları ihlali** suçlamalarıyla cezalandırı",
+10,google/gemma-2-2b-it,"Anayasa madde 129'a göre, devlet memurları ve diğer kamu görevlilerinin görev ve sorumluluklarının korunması için hangi şartlar sağlanmalıdır?","Anayasa madde 129, devlet memurları ve diğer kamu görevlilerinin görev ve sorumluluklarının korunması için, kamu görevlilerinin anayasaya ve kanunlara sadakatle bağlı kalmaları, halkın hizmetinde dürüstlükle çalışmaları, tarafsız davranmaları ve amirlerine itaat etmeleri şartını anayasal güvence altına alarak güvenceler sağlar.","Anayasa madde 129'a göre, devlet memurları ve diğer kamu görevlilerinin görev ve sorumluluklarının korunması için **devlet memurları ve diğer kamu görevlilerinin haklarının ve yükümlülüklerinin korunması** sağlanmalıdır",
+11,google/gemma-2-2b-it,Milletvekilliğinin düşmesi kararına itiraz nasıl yapılır,"Milletvekilliğinin düşmesi kararına, anayasa mahkemesi'ne bireysel başvuru yapılarak itiraz edilebilir. anayasa mahkemesi, kararın anayasal ve yasal esaslara uygunluğunu denetler.","Milletvekilliğinin düşmesi kararına itiraz etmek için, **yargıya başvurmak** gerekir. 
+
+**İtirazın yapılabilmesi için:**
+
+* **Yasal bir yol:** Milletvekilliği düşmesi kararına itiraz etmek için",
+12,google/gemma-2-2b-it,"Anayasa madde 151, anayasa mahkemesi'ne bireysel başvuru yapma yetkisinin sınırlandırılmasını nasıl düzenler","Anayasa madde 151, anayasa mahkemesi'ne bireysel başvuru yapma yetkisinin sınırlandırılmasını, anayasa'da güvence altına alınmış temel hak ve özgürlüklerin, avrupa i̇nsan hakları sözleşmesi kapsamındaki hakların kamu gücü tarafından ihlal edildiği iddiasıyla ve olağan kanun yollarının tüketilmesinden sonra bireysel başvuru yapılma şartı ile düzenler. bu sınırlamalar, bireysel başvuru yapma yetkisini ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır. bu hüküm, bireysel başvuru yapma yetkisinin korunmasını ve sınırlamaların keyfi olmamasını sağlar.","Anayasa madde 151, anayasa mahkemesi'ne bireysel başvuru yapma yetkisinin sınırlandırılmasını **Anayasa'nın 151. maddesinde belirtilen yetki sınırlandırılmasını** düzenler.",
+13,google/gemma-2-2b-it,Beyanname nedir?,"Katma değer vergisi, mal ve hizmet teslimlerinde alınan, nihai tüketicinin ödediği dolaylı bir vergidir.","Beyanname, bir mahkeme tarafından tarafların anlaşmazlıkları hakkında karar verdikten sonra, tarafların bu kararın doğruluğunu ve haklarını belirlemek için tarafların tarafında bir belge olarak hazırlanır.",
+14,google/gemma-2-2b-it,İşsizlik maaşı nasıl hesaplanır?,"İşsizlik maaşı, son 4 aylık brüt kazançların ortalaması alınarak hesaplanır. brüt kazancın %40'ı oranında maaş ödenir.","İşsizlik maaşı, işsizliğin süresi ve maaşınızın ortalama miktarı dikkate alınarak hesaplanır. Genellikle, işsizliğin ilk 3 ayında %80 oranında maaşınızın ortalaması üzerinden hesaplanır. Daha sonra bu",
+15,google/gemma-2-2b-it,"Anayasa madde 9'a göre, yargı yetkisinin tarafsız ve bağımsız bir şekilde kullanılması nasıl sağlanır","Anayasa madde 9'a göre, yargı yetkisinin tarafsız ve bağımsız bir şekilde kullanılması, yargı organlarının karar verirken hiçbir baskı, etki veya müdahale altında kalmadan hareket etmeleri ile sağlanır. yargı organları, yargı yetkisini millet adına kullanarak adaletin tarafsız ve objektif bir şekilde sağlanmasını temin eder. bu hüküm, yargı organlarının bağımsızlığını ve tarafsızlığını güvence altına alır.","Anayasa madde 9, yargı yetkisinin tarafsız ve bağımsız bir şekilde kullanılması için **yargı kuruluşu'nun bağımsızlığı ve yargı kararlarının güvenilirliği** üzerine odaklanır. Bu, yargı",
+16,google/gemma-2-2b-it,Kira tespit davası nedir?,"Kira tespit davası, kira bedelinin taraflar arasında anlaşmazlık konusu olması durumunda, kira bedelinin mahkeme tarafından belirlenmesi için açılan davadır.","Kira tespit davası, bir kiracı ve kiracı tarafından kiralanan bir malın veya işyeri için kira ödemeleri konusunda anlaşmazlıklar yaşanması durumunda, tarafların anlaşmazlıkları çözmek için açılan bir dava türüdür.",
+17,google/gemma-2-2b-it,Şiddet mağdurları için hangi tedbirler alınabilir?,"Aile mahkemesi, şiddete yönelik söz ve davranışlarda bulunulmaması, müşterek evden uzaklaştırma gibi tedbirler alabilir.","Şiddet mağdurları için çeşitli tedbirler alınabilir. Bunlar arasında:
+
+* **Psikolojik destek:** Şiddet mağdurlarına psikolojik destek sağlamak, yaşadıkları travmayı atlatmalarını ve iyileşme sürecinde",
+18,google/gemma-2-2b-it,"Devlet, yabancı ülkelerde çalışan türk vatandaşlarının aile birliğini nasıl korur?","Devlet, yabancı ülkelerde çalışan türk vatandaşlarının aile birliğinin, çocuklarının eğitiminin, kültürel ihtiyaçlarının ve sosyal güvenliklerinin sağlanması, anavatanla bağlarının korunması ve yurda dönüşlerinde yardımcı olunması için gereken tedbirleri alır. (madde 62)","Devlet, yabancı ülkelerde çalışan Türk vatandaşlarının aile birliğini korurken, **yabancı ülkede bulunan Türk vatandaşının, yabancı ülkede bulunan eşinin veya eşinin ailesinin, Türk vatandaşı olarak yasal olarak aile birliğini koruyabil",
+19,google/gemma-2-2b-it,Yerleşme hürriyetinin korunmasında devletin rolü nedir,"Devlet, yerleşme hürriyetini korumakla yükümlüdür. bu, yasal düzenlemeler yaparak, denetim mekanizmaları kurarak ve ihlalleri önleyerek gerçekleştirilir.","Yerleşme hürriyetinin korunması, temel haklar ve özgürlükler alanında devletin önemli bir rol oynamaktadır. Devlet, yerleşme hürriyetini korumak için aşağıdaki görevleri yerine getirmektedir:
+
+* **Yerleşme hakkının",
+20,google/gemma-2-2b-it,Özel sektörde mobbinge maruz kaldım ne yapmalıyım,Anayasa'nın 49. maddesi çalışma hakkını güvence altına alır. özel sektörde mobbinge maruz kaldıysanız işvereninize durumu bildirerek çözüm talep etmeli ve gerekirse i̇ş mahkemesi'ne başvurarak tazminat talep edebilirsiniz.,"Mobbinge maruz kalmak, özellikle özel sektörde, işyerinde meydana gelen bir sorun olarak karşımıza çıkabilir. Bu durum, hem fiziksel hem de psikolojik olarak sizi olumsuz etkileyebilir. 
+
+**İşte size bazı öneriler:**",
+21,google/gemma-2-2b-it,"Kamu iktisadi teşebbüslerinin asli ve sürekli görevleri, memurlar ve diğer kamu görevlileri eliyle yürütülmemektedir. Bu durum Anayasanın 128. Maddesi'ne uygun mudur?","Hayır, Anayasanın 128. Maddesi, kamu iktisadi teşebbüslerinin asli ve sürekli görevlerinin memurlar ve diğer kamu görevlileri eliyle yürütülmesini öngörür. Bu durum maddeye aykırıdır.","**Evet, Anayasanın 128. Maddesi'ne uyguntur.**
+
+**Açıklama:**
+
+Anayasanın 128. Maddesi, kamu iktisadi teşebbüslerinin asli ve sürekli görevlerini yürütmekle yükümlü olduğunu",
+22,google/gemma-2-2b-it,"Bir televizyon dizisinde, vergi yükümlülüğünün keyfi olarak belirlenebileceği savunulmuştur. Bu durum Anayasanın 73. Maddesi ile nasıl çelişir?","Anayasanın 73. Maddesi, herkesin kamu giderlerini karşılamak üzere mali gücüne göre vergi ödemekle yükümlü olduğunu belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 73. maddesi, vergi yükümlülüğünün adil ve eşit şekilde dağıtılmasını gerektirir. Bu nedenle, vergi yükümlülüğünün keyfi olarak belirlenmesi, Anayasanın 73. maddes",
+23,google/gemma-2-2b-it,"Bir öğrenci, okulda tarih, kültür ve tabiat varlıklarının korunma hakkının herhangi bir yasal dayanak olmadan kısıtlanması gerektiğini savunmaktadır. Bu durum Anayasanın 63. Maddesi ile nasıl çelişir?","Anayasanın 63. Maddesi, devletin tarih, kültür ve tabiat varlıklarını koruma yükümlülüğüne sahip olduğunu belirtir. Bu tür bir savunma Anayasa'ya aykırıdır.","Anayasanın 63. maddesi, ""Her vatandaşın doğasına uygun olarak, yaşam hakkını ve yaşamın bütün yönlerini koruyabileceği"" bir hak tanımaktadır. Bu hak, öğrencinin tarih, kültür ve tabiat varlıklarının korunması için bir",
+24,google/gemma-2-2b-it,Akıl hastalığı sebebiyle boşanma nasıl açılır?,"Akıl hastalığı sebebiyle boşanma davası, eşlerden birinin akıl hastalığı olması durumunda açılır.","Akıl hastalığı sebebiyle boşanma, **hukuki olarak mümkün değildir**. 
+
+**Açıklama:**
+
+* Akıl hastalığı, bireyin zihinsel sağlığını olumsuz etkileyen bir durumdur. 
+* Bu durum, bireyin kendi karar",
+25,google/gemma-2-2b-it,Kooperatiften Çıkma ve Ödemeleri Geri Alma Süreci Nasıl İşler?,"Her Ortağın Kooperatiften Çıkma Hakkı Vardır. Çıkış, Ancak Bir Hesap Senesi Sonu İçin ve En Az 6 Ay Önceden Haber Verilerek Yapılır. Haklı ve Önemli Sebeplerin Varlığı Halinde Kooperatiften Çıkabilir ve Ödediklerinizi İsteyebilirsiniz.","Kooperatiften çıkma ve ödemeleri geri alma süreci, genel olarak aşağıdaki adımlar ile gerçekleşir:
+
+1. **Kooperatif Hakem Heyeti'ne Başvuru:** Kooperatif üyeleri, kooperatif hakimiyetini ve haklarını koruma",
+26,google/gemma-2-2b-it,Kamu kurumu niteliğindeki meslek kuruluşlarının eğitim faaliyetleri nelerdir,"Kamu kurumu niteliğindeki meslek kuruluşları, meslek mensuplarına yönelik seminerler, kurslar, sertifika programları ve eğitim faaliyetleri düzenler. bu faaliyetler, mesleki bilgi ve becerilerin artırılmasını hedefler.","Kamu kurumu niteliğindeki meslek kuruluşlarının eğitim faaliyetleri şunlardır:
+
+* **Meslek eğitimi:**  Mesleki beceriler ve bilgi edinme amacıyla düzenlenen eğitim programları.
+* **Yükseköğretim:** Kamu kurumları tarafından",
+27,google/gemma-2-2b-it,İşkence yasağı nedir?,"İnsan hakları, insanın sırf insan olduğu için sahip olduğu temel hak ve özgürlüklerdir.","İşkence yasağı, **bir kişinin fiziksel veya psikolojik olarak zarar vererek, onu zorlamasını veya baskı yapmasını sağlayan bir davranış** olarak tanımlanabilir. Bu yasağın amacı, insan haklarının korunması ve bireylerin özgür",
+28,google/gemma-2-2b-it,Hüküm nedir?,"İdari yargı, idarenin işlemlerine karşı açılan davaların görüldüğü yargı koludur.","Hüküm, bir hukuk sisteminde, bir yargı kararının sonucu olarak, bir kişinin veya kurumun haklarını veya yükümlülüklerini belirleyen bir yargı kararının sonucu olarak ortaya çıkan bir yargı kararının sonucu olarak ortaya çıkan",
+29,google/gemma-2-2b-it,Bilgi edinme ve kamu denetçisine başvurma hakkı hangi durumları kapsar?,"Herkes, bilgi edinme ve kamu denetçisine başvurma hakkına sahiptir. (madde 74)","Bilgi edinme ve kamu denetçisine başvurma hakkı, **işletmelerin kamu kaynaklarını kullanma ve kamu hizmetlerini sunma süreçlerinde** ortaya çıkan **yanlış veya yetersiz bilgi** ve **işletmelerin bu yanlış veya yetersiz bilgiye",
+30,google/gemma-2-2b-it,"Sanık, bir spor organizasyonunda kurallara aykırı olarak doping yapıp diğer sporculara haksız avantaj sağlarsa, hangi suçlamalar gündeme gelir?","Sanık, spor organizasyonunda kurallara aykırı olarak doping yapıp diğer sporculara haksız avantaj sağlarsa, 'doping kural ihlali', 'spor etik kurallarını ihlal' ve 'haksız rekabet' suçlarıyla karşılaşabilir. Bu suçlar, disiplin cezaları ve/veya adli cezalarla sonuçlanabilir ve mağdurların zararının tazmini gerekebilir.","Sanık, doping suçlamasıyla karşı karşıya kalabilir. Bu suç, **sporcuların sağlık ve fair play prensiplerine aykırı olarak doping yapması** nedeniyle ortaya çıkar. 
+
+**Ek bilgiler:**
+
+* Doping, sporcuların performansını artır",
+31,google/gemma-2-2b-it,Evlatlık ile biyolojik çocuklar arasındaki miras hakkı farkları nelerdir?,"Evlatlık, biyolojik çocuklar gibi mirasçıdır ve aynı haklara sahiptir. ancak evlatlığın biyolojik ailesi ile olan mirasçılık ilişkisi kesilir.","Evlatlık ile biyolojik çocuklar arasındaki miras hakkı farkları şunlardır:
+
+* **Evlatlık çocuklar:**  Evlatlık ile biyolojik çocuklar arasında miras hakkı farkı, evlatlık çocukların miras alabilme şartlarını karşılamadığı durumlarda",
+32,google/gemma-2-2b-it,"Bir milletvekili, parlamentoda dernek kurma hakkının herhangi bir yasal dayanak olmadan kısıtlanabileceğini savunmaktadır. Bu durum Anayasanın 32. Maddesi ile nasıl çelişir?","Anayasanın 32. Maddesi, herkesin önceden izin almaksızın dernek kurma hakkına sahip olduğunu belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 32. maddesi, derneklerin kurulması ve faaliyetleri hakkında genel bir yasal düzenleme sunar. Milletvekili, bu yasal düzenlemeyi çiğnemeye çalışırken, Anayasa'nın 32. maddesi",
+33,google/gemma-2-2b-it,"Anayasa madde 136'ya göre, diyanet i̇şleri başkanlığı'nın kuruluşu ve görevlerinin sınırlandırılması hangi koşullarda yapılabilir","Anayasa madde 136'ya göre, diyanet i̇şleri başkanlığı'nın kuruluşu ve görevlerinin sınırlandırılması, sadece genel idare içinde yer alma, laiklik ilkesi doğrultusunda çalışma, siyasi görüş ve düşüncelerin dışında kalma ve milletçe dayanışma ve bütünleşmeyi amaç edinme şartı ile yapılabilir. bu sınırlamalar, başkanlığın özerkliğini ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır.","Anayasa madde 136'ya göre, Diyanet İşleri Başkanlığı'nın kuruluşu ve görevlerinin sınırlandırılması, **hukuksal ve yasal yollarla** yapılabilir.",
+34,google/gemma-2-2b-it,Anayasanın 143. Maddesi Nedir?,"Anayasanın 143. maddesi, devlet güvenlik mahkemelerine ilişkin hükümleri içerir.","Anayasanın 143. maddesi, **""İnsan Hakları ve Özgürlükler""**'i düzenleyen maddedir.",
+35,google/gemma-2-2b-it,Hangi tür bilgiler özel nitelikli kişisel veri olarak kabul edilir?,"Irkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi, diğer inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkumiyeti ve güvenlik tedbirleriyle ilgili verileri ile biyometrik ve genetik bilgiler.","**Özel nitelikli kişisel veriler, kişinin kimliğini, sağlık durumunu, dini inançlarını, aile yapısını, siyasi görüşlerini, sosyal durumunu, finansal durumunu, cinsiyetini, cinsiyet kimliği, cinsel yönelimi, eş",
+36,google/gemma-2-2b-it,Tbmm başkanlık divanında kimler bulunur?,"Türkiye büyük millet meclisinin başkanlık divanı, meclis üyeleri arasından seçilen meclis başkanı, başkanvekilleri, katip üyeler ve i̇dare amirlerinden oluşur. (madde 94)","Tbmm başkanlık divanında **Başkan, Başkan Yardımcısı ve Üye** bulunur.",
+37,google/gemma-2-2b-it,Kvk kurulu üyeleri hangi durumlarda görevden alınır?,"Seçilmek için gereken şartları taşımadıklarının sonradan anlaşılması, görevleriyle ilgili olarak işledikleri suçlardan dolayı haklarında verilen mahkumiyet kararının kesinleşmesi, görevlerini yerine getiremeyeceklerinin sağlık kurulu raporuyla kesin olarak tespit edilmesi, görevlerine izinsiz, mazeretsiz ve kesintisiz olarak on beş gün ya da bir yılda toplam otuz gün süreyle devam etmediklerinin tespit edilmesi, bir ay içinde izinsiz ve mazeretsiz olarak toplam üç, bir yıl içinde toplam on kurul toplantısına katılmadıklarının tespit edilmesi hallerinde kvk kurulu kararıyla üyelikleri sona erer. (kvkk md.21/f.13)","KVK kurulu üyeleri, **yasal zorunluluklar nedeniyle** görevden alınır. Bu zorunluluklar şunlardır:
+
+* **Yasal süreçler:** KVK kurulu üyeleri, yasal süreçler içerisinde görevden alınır",
+38,google/gemma-2-2b-it,"Bir üniversite profesörü, dersinde sağlıklı ve dengeli bir çevrede yaşama hakkının keyfi olarak kısıtlanabileceğini savunmuştur. Bu durum Anayasanın 56. Maddesi ile nasıl çelişir?","Anayasanın 56. Maddesi, herkesin sağlıklı ve dengeli bir çevrede yaşama hakkına sahip olduğunu belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 56. maddesi, herkesin sağlıklı ve dengeli bir çevrede yaşama hakkına sahip olduğunu belirtir. Profesörün savunduğu görüş, bu hakkın kısıtlanabileceği fikrini destekler. Bu, Anayasanın",
+39,google/gemma-2-2b-it,"Anayasa madde 73, vergi ödevi yükümlülüğünün ihlali durumunda ne tür hukuki mekanizmalar devreye girer","Anayasa madde 73'e göre, vergi ödevi yükümlülüğünün ihlali durumunda, vatandaşların hukuki yollara başvurarak haklarını arama ve ihlallerin giderilmesini talep etme hakkı vardır. devlet, vergi ödevi yükümlülüğünü korumak ve ihlallerin engellenmesini sağlamakla yükümlüdür.","Anayasa madde 73'e göre vergi ödevi yükümlülüğünün ihlali durumunda, **hukuki mekanizmalar** devreye girer. Bu mekanizmalar, **vergi mahkemesi** ve **yargı sisteminin",
+40,google/gemma-2-2b-it,Eğitim ve öğrenim hakkının ihlali durumunda başvuru yolları nelerdir,"Eğitim ve öğrenim hakkının ihlali durumunda bireyler ulusal yargı mercilerine başvurabilir, eğitim kurumlarına şikayette bulunabilir ve uluslararası insan hakları mekanizmalarına müracaat edebilir.","Eğitim ve öğrenim hakkının ihlali durumunda başvuru yolları şunlardır:
+
+* **Yargıtay:** Eğitim ve öğrenim hakkının ihlali, yasal bir hak olarak kabul edilir. Bu nedenle, yargıtay'a baş",
+41,google/gemma-2-2b-it,Arsamızın yol genişletilmesi nedeniyle 50 m²'lik bir kısmı kamulaştırılacak. yeni arsa ölçülerinden dolayı yapacağımız ev daha küçük olacak. kazanılmış hakkımızı kaybeder miyiz?,"Evet, kamulaştırma nedeniyle değer kaybı meydana geliyorsa, bunun tazmini için mahkeme bilirkişiler belirleme yapacaktır. i̇darece önerilen bedeli kabul etmemeli ve bedel tespit davası açmalısınız.","Hayır, kamulaştırma işlemi sonucunda kazanılmış hakkınız kaybedilmez. 
+
+**Açıklama:**
+
+Kamulaştırma işlemi, kamu yararı için bir alana sahip olma hakkını elde eden kişiler için bir hak kaybı olarak kabul edilir",
+42,google/gemma-2-2b-it,Tahrik nedir?,"Tahrik, bir kişinin aklının ve iradesinin bir suç işlemekten ciddi bir şekilde etkilenmesi sonucu, işlediği suçun cezasının hafifletilmesine neden olabilen bir durumdur.","Tahrik, bir kişinin, bir başka kişinin veya bir kuruluşun, bir hukuki işlem veya eylemi yapmasını veya bir hukuki işlem veya eylemi reddetmesini sağlamak için, bir kişi veya kuruluş tarafından yapılan bir eylemdir. 
+
+**Açıklama:**",
+43,google/gemma-2-2b-it,"Anayasa madde 68'e göre, siyasi partiler kurma hakkının sınırlandırılması hangi koşullarda yapılabilir","Anayasa madde 68'e göre, siyasi partiler kurma hakkının sınırlandırılması, ancak kanunla ve demokratik toplum düzeninin gereklerine uygun olarak yapılabilir. bu sınırlamalar, bu hakkı ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır.","Anayasa madde 68'e göre, siyasi partiler kurma hakkının sınırlandırılması **halkın güvenliğini tehdit eden veya siyasi faaliyetlerde yasal sınırları aşan** bir durum veya **halkın temel hak ve özgürlüklerini",
+44,google/gemma-2-2b-it,Anayasanın 84. Maddesiyle İlgili Tartışmalar Nelerdir?,Milletvekilliğinin düşme sebepleri ve süreçlerinin sınırları ve uygulanması üzerine tartışmalar olabilir.,"Anayasanın 84. Maddesiyle ilgili tartışmalar, **""İnsan Hakları ve Özgürlükler""** konusundaki tartışmalardır. Bu madde, Türkiye Cumhuriyeti'nin temel ilkelerini ve vatandaşların haklarını belirlerken",
+45,google/gemma-2-2b-it,Dedemden kalan malın paylaşımı hakkında sorun yaşıyoruz. ne yapmalıyız?,"Miras paylaşımı konusunda zorlanıyorsanız, miras hukukunda uzman bir avukattan profesyonel yardım almanız yararlı olacaktır.","Dedemden kalan malın paylaşımı konusunda sorun yaşadığınızı duymak üzücü. Bu konuda, öncelikle **hukuki bir çözüm bulmak için bir avukat ile görüşmeniz** en önemli adım olacaktır. Avukat, sizin durumunuzu detaylı bir şekilde değerlendire",
+46,google/gemma-2-2b-it,"Anayasa madde 101, cumhurbaşkanının seçilme koşullarının sınırlandırılmasını nasıl düzenler","Anayasa madde 101, cumhurbaşkanının seçilme koşullarının sınırlandırılmasını, kırk yaşını doldurmuş, yükseköğrenim yapmış, milletvekili seçilme yeterliliğine sahip türkiye cumhuriyeti vatandaşı olma şartı ile düzenler. bu sınırlamalar, cumhurbaşkanının seçilme koşullarını ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır. bu hüküm, cumhurbaşkanının seçilme koşullarının korunmasını ve sınırlamaların keyfi olmamasını sağlar.","Anayasa madde 101, cumhurbaşkanının seçilme koşullarını **sınırlandırma** konusunda **yönetmelik** ve **yönerge** ile düzenler.",
+47,google/gemma-2-2b-it,TBMM'nin Bilgi Edinme ve Denetim Yetkisi Hangi Anayasa Maddesinde Belirtilmiştir?,98. maddede.,"**TBMM'nin Bilgi Edinme ve Denetim Yetkisi, Anayasa madde 59'da belirtilmiştir.**",
+48,google/gemma-2-2b-it,"Tüketici, satın aldığı ayıplı mal için hangi haklara sahiptir?","6502 sayılı Tüketicinin Korunması Hakkında Kanun'a göre, tüketici, satın aldığı ayıplı mal için ücretsiz onarım, malın değiştirilmesi, bedel indirimi veya bedel iadesi talep edebilir. Yargıtay içtihatları, tüketicinin bu haklarını kullanabilmesi için ayıbın varlığını ispatlaması gerektiğini vurgular.","Tüketici, satın aldığı ayıplı mal için **tüm tüketici haklarına** sahiptir. Bu haklar şunlardır:
+
+* **İade:** Ayıplı malı iade edebilir.
+* **Değiştirme:** Ayıplı",
+49,google/gemma-2-2b-it,Herhangi bir gerçek veya tüzel kişi aynı zamanda hem veri sorumlusu hem de veri işleyen olabilir mi?,"Veri sorumlusu, kişisel verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan gerçek veya tüzel kişidir. bu kişiler, gerçek kişiler olabileceği gibi, kamu kurumları, şirketler, dernekler veya vakıflar gibi tüzel kişiler de olabilecektir.","Evet, herhangi bir gerçek veya tüzel kişi aynı zamanda hem veri sorumlusu hem de veri işleyen olabilir. 
+
+**Açıklama:**
+
+Veri sorumlusu, veriye erişim, kullanımı ve paylaşımına ilişkin sorumluluğu üstlenir.",
+50,google/gemma-2-2b-it,İdarenin bazı görevleri kanunla düzenlenmemiş ve bir bütün olarak ele alınmamıştır. Bu durum Anayasanın 123. Maddesi ile nasıl çelişir?,"Anayasanın 123. Maddesi, idarenin tüm görevlerinin kanunla düzenlenmesini ve bir bütün olarak ele alınmasını öngörür. Bu durum maddeye aykırıdır.","Anayasanın 123. maddesi, idarelerin görevlerini düzenleme yetkisini devlete ait bir bütün olarak vermektedir. Bu nedenle, idarenin bazı görevleri kanunla düzenlenmemiş ve bir bütün olarak ele alınmamıştır, bu durum Anay",
+51,google/gemma-2-2b-it,İdari yargı nedir?,"Hukuki dinlenilme hakkı, tarafların yargılama sürecinde savunmalarını yapabilme ve delillerini sunabilme hakkıdır.","İdari yargı, **devlet tarafından yürütülür ve hukukun üstünlüğü altında çalışan, yasal düzenlemeler çerçevesinde işletilen, kamuoyunun güvenini kazanması ve adil bir şekilde işletilmesi gereken bir yargı sistemi**dir.",
+52,google/gemma-2-2b-it,"Bir belediye başkanı, resmi toplantılarda başka bir dili kullanmayı zorunlu hale getirmiştir. Bu uygulama Anayasanın 3. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 3. Maddesi Türkiye Devleti'nin resmi dilinin Türkçe olduğunu belirtir. Resmi toplantılarda başka bir dil kullanmak bu maddeye aykırıdır.","Evet, belediye başkanının resmi toplantılarda başka bir dil kullanmayı zorunlu hale getirme uygulaması Anayasanın 3. Maddesi'ne aykırıdır. 
+
+**Açıklama:**
+
+Anayasanın 3. maddesi, Türk",
+53,google/gemma-2-2b-it,"Bir belediye, yerel yönetimde herkesin yaşama hakkının sınırlandırılabileceğini kararlaştırmıştır. Bu uygulama Anayasanın 17. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 17. Maddesi, herkesin yaşama hakkına sahip olduğunu ve bu hakkın ancak kanunlarla düzenlenebileceğini vurgular. Bu tür bir uygulama Anayasa'ya aykırıdır.","Evet, bu uygulama Anayasanın 17. Maddesi'ne aykırıdır. 
+ 
+**Açıklama:**
+
+Anayasanın 17. maddesi, herkesin yaşama hakkının korunmasını ve bu hakkın sınırlandırılamayacağ",
+54,google/gemma-2-2b-it,"Anayasa madde 80'e göre, milletvekillerinin türkiye'yi temsil etme yetkisinin sınırlandırılmasında hangi ilkeler gözetilir","Anayasa madde 80'e göre, milletvekillerinin türkiye'yi temsil etme yetkisinin sınırlandırılmasında kanunilik, demokratik toplum düzeninin gereklerine uygunluk ve ölçülülük ilkeleri gözetilir. bu sınırlamalar, milletvekillerinin temsil yetkisini ihlal etmemeli ve bireylerin demokratik temsiliyetini kısıtlamamalıdır.","Anayasa madde 80'e göre milletvekillerinin Türkiye'yi temsil etme yetkisinin sınırlandırılmasında **devlet ve vatandaşların hakları**, **demokratik değerler**, **özgürlükler** ve **yasal düzen**",
+55,google/gemma-2-2b-it,Kişinin rızası olmadan kişisel veriler hangi şartlarda işlenebilir?,"Kanunlarda açıkça öngörülmesi, fiili imkansızlık nedeniyle rızasını açıklayamayacak durumda olan kişinin hayatı veya beden bütünlüğünün korunması, bir sözleşmenin kurulması veya ifası için gerekli olması, veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi, ilgili kişinin kendisi tarafından alenileştirilmiş olması, bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması, veri sorumlusunun meşru menfaatleri için veri işlemenin zorunlu olması.","Kişinin rızası olmadan kişisel veriler **yasal düzenlemeler** uyarınca işlenebilir. 
+
+**Açıklama:**
+
+Kişilerin kişisel verilerinin işlenmesi, temel hak ve özgürlükler ile ilgili yasal düzenlemeler",
+56,google/gemma-2-2b-it,Vergi affı sonrasında borçların ödenmemesi durumunda ne olur?,"Vergi affı sonrasında borçların ödenmemesi durumunda, mükellef affın sağladığı avantajları kaybeder ve borç yeniden yapılandırılmadan önceki haline döner.","Vergi affı sonrasında borçların ödenmemesi durumunda, borçların ödenmesi zorunlu hale gelir.",
+57,google/gemma-2-2b-it,Bir kişi facebook üzerinden tehdit mesajları gönderdiğinde ne tür yasal işlemler yapılmalıdır?,"Facebook üzerinden tehdit mesajları gönderildiğinde, ilgili platforma şikayette bulunmalı ve yetkili makamlara suç duyurusunda bulunarak hukuki işlemleri başlatmalısınız.","Facebook üzerinden yapılan tehdit mesajları, **taraflar arasında iletişim kurma ve iletişimin güvenliğini sağlama** amacıyla kullanılabilen bir platformdur. Ancak, bu platformda yapılan tehdit mesajları, **yasal olarak suç olarak kabul edilir**. 
+
+Bu tür",
+58,google/gemma-2-2b-it,Mülkiyetin devri nedir?,"Mülkiyetin devri, bir malın mülkiyetinin bir kişiden başka bir kişiye geçmesi işlemidir.","Mülkiyetin devri, bir malın veya hakın, belirli bir kişi veya kuruluş tarafından kontrol edildiği ve kullanıldığı sürece, bu mal veya hakın sahibi olarak belirli bir kişi veya kuruluş tarafından kontrol edildiği ve kullanıldığı sürece, bu mal veya",
+59,google/gemma-2-2b-it,Uluslararası yatırım hukuku nedir?,"Uluslararası yatırım hukuku, yabancı yatırımların korunması, teşvik edilmesi ve yönetimi ile ilgili kuralları belirleyen hukuk dalıdır. i̇kili yatırım anlaşmaları bu hukukun temelini oluşturur.","Uluslararası yatırım hukuku, **bir ülkenin veya bir bölgenin diğer ülkelerin yatırımcılarına sunduğu güvenlik ve koruma sağlayan hukuki düzenlemeleri** kapsar. 
+
+**Önemli Noktalar:**
+
+* Uluslar",
+60,google/gemma-2-2b-it,Tbmm üyeleri hangi tür işlerde çalışamaz ve hangi görevlerde bulunamazlar?,"Tbmm üyeleri, devlet ve diğer kamu tüzel kişilerinde ve bunlara bağlı kuruluşlarda; devletin veya diğer kamu tüzelkişilerinin doğrudan veya dolaylı olarak katıldığı teşebbüs ve ortaklıklarda; özel gelir kaynakları ve özel imkanları kanunla sağlanmış kamu yararına çalışan derneklerin ve devletten yardım sağlayan ve vergi muafiyeti olan vakıfların, kamu kurumu niteliğindeki meslek kuruluşları ile sendikalar ve bunların üst kuruluşlarının ve katıldıkları teşebbüs veya ortaklıkların yönetim ve denetim kurullarında görev alamazlar, vekili olamazlar, herhangi bir taahhüt işini doğrudan veya dolaylı olarak kabul edemezler, temsilcilik ve hakemlik yapamazlar. (madde 82)","Tbmm üyeleri, **hukuksal ve yasal işlerde çalışamazlar** ve **yasa dışı faaliyetlerde bulunmaktan kaçınmalıdırlar**. 
+
+**Açıklama:**
+
+* **Hukuksal ve yasal işlerde çalışamazlar:**",
+61,google/gemma-2-2b-it,Hakimler ve savcılar kurulu'nun uluslararası benzerleri nelerdir,"Hakimler ve savcılar kurulu'na benzer kurumlar, birçok ülkede yargı mensuplarının atanması, terfisi ve disiplin işlemlerini yürüten anayasal organlar olarak faaliyet gösterir.","Hakimler ve Savcılar Kurulu'nun uluslararası benzerleri şunlardır:
+
+* **İnternational Criminal Court (ICC):**  İnternational Criminal Court, uluslararası suçlar konusunda yargılama yapar.
+* **European Court of Human Rights (",
+62,google/gemma-2-2b-it,"Bir belediyedeki mahalli idare, belediye halkının mahalli müşterek ihtiyaçlarını karşılamak üzere kurulmuş ve karar organları seçimle işbaşına gelmemiştir. Bu durum Anayasanın 127. Maddesi'ne uygun mudur?","Hayır, Anayasanın 127. Maddesi, mahalli idarelerin belediye halkının mahalli müşterek ihtiyaçlarını karşılamak üzere kurulmasını ve karar organlarının seçimle işbaşına gelmesini öngörür. Bu durum maddeye aykırıdır.","Hayır, Anayasanın 127. Maddesi'ne uygun değildir. 
+
+**Açıklama:**
+
+Anayasanın 127. Maddesi, belediye halkının mahalli müşterek ihtiyaçlarını karşılamak üzere kurulmuş ve karar organları seçim",
+63,google/gemma-2-2b-it,İş yerinde performans düşüklüğü nedeniyle işten çıkarıldım haklarım nelerdir,Performans düşüklüğü nedeniyle işten çıkarıldıysanız i̇ş kanunu kapsamında çeşitli haklarınız bulunmaktadır öncelikle işvereninizin performans değerlendirmelerini ve uyarılarını inceleyin haksız bir işten çıkarma olduğunu düşünüyorsanız işe iade davası açabilirsiniz ayrıca kıdem tazminatı ihbar tazminatı ve diğer işçi alacaklarınızı talep edebilirsiniz,"İşten çıkarılma hakkı, işveren ve işçinin iş sözleşmesi ve iş hukuku çerçevesinde belirlenir. İşten çıkarılma nedenleri, işveren tarafından belirlenen iş yükü, işçinin performansı, işveren ve işçinin iş söz",
+64,google/gemma-2-2b-it,Anayasanın 34. Maddesi Sizce Neden Önemlidir?,Herkesin önceden izin almaksızın toplantı ve gösteri yürüyüşü düzenleme hakkına sahip olduğunu belirlediği için önemlidir.,"Anayasanın 34. maddesi, **tüm vatandaşların eşit hak ve özgürlükleri** ile ilgilidir. Bu madde, **herkesin vatandaşlık haklarını ve bu hakların korunmasını** sağlamak için önemlidir. 
+
+**",
+65,google/gemma-2-2b-it,Nafaka ödemelerinde gecikmeler hakaret etme hakkı verir mi?,"Hayır, nafaka ödemelerindeki gecikmeler hakaret etme hakkını vermez. şikayet edebilirsiniz.","Hayır. Nafaka ödemelerinde gecikmeler hakaret etme hakkı vermez. 
+
+**Açıklama:**
+
+Nafaka ödemelerinde gecikmeler, tarafların anlaşmazlık yaşamasına sebep olabilir. Ancak, bu gecikmeler, tarafların haklarını",
+66,google/gemma-2-2b-it,Vatan hizmetinin yerine getirilmesinde vatandaşların sorumlulukları nelerdir,"Vatandaşlar, vatan hizmetini yerine getirmek, ulusal savunma ve güvenlik görevlerine katılmak ve yasalarla belirlenen hizmetleri yerine getirmekle sorumludur. bu, vatandaşlık bilincinin bir parçasıdır.","Vatan hizmetinin yerine getirilmesinde vatandaşların sorumlulukları şunlardır:
+
+* **Toplumsal sorumluluk:** Toplumun ihtiyaçlarına karşı sorumluluk sahibi olmak, toplumsal değerlere saygı göstermek, vatandaşlık bilincini geliş",
+67,google/gemma-2-2b-it,"Müteahhit ile yapılan sözleşmede peşinat verildi, müteahhit cayma halinde 15 gün içinde ödeme yapacağını belirtti ama şimdi ödeme yapmıyor. ne yapmalıyım?",Noter aracılığıyla ihtarname gönderip sözleşmeyi feshedin. peşinatı geri almak için dava açmanız gerekebilir.,"Bu durumda, öncelikle sözleşmenin şartlarını dikkatlice inceleyin. 
+
+**Ödeme şartı:** Sözleşmede belirtilen ödeme şartı ne kadar net ve ayrıntılı? 
+**Ödeme tarihleri:** Sözleşmede belirtilen ödeme tarihleri",
+68,google/gemma-2-2b-it,"Anayasa madde 104'e göre, cumhurbaşkanının görev ve yetkilerinin ihlali hangi durumlarda söz konusu olur","Anayasa madde 104'e göre, cumhurbaşkanının görev ve yetkilerinin ihlali, anayasa'nın uygulanmasını gözetmemesi veya devlet organlarının düzenli ve uyumlu çalışmasını sağlamaması durumunda söz konusu olur. devlet, bu tür ihlalleri önlemek ve cumhurbaşkanının görev ve yetkilerini korumakla yükümlüdür.","Anayasa madde 104'e göre, cumhurbaşkanının görev ve yetkilerinin ihlali, aşağıdaki durumlarda söz konusu olur:
+
+* **Cumhurbaşkanı'nın görev ve yetkilerini ihlal eden bir karar veya e",
+69,google/gemma-2-2b-it,Okulda çocuğuma yönelik ayrımcılık yapıldığını düşünüyorum ne yapmalıyım,"Anayasa'nın 42. maddesi eğitim hakkını güvence altına alır. çocuğunuza yönelik ayrımcılık yapıldığını düşünüyorsanız, okul yönetimiyle durumu görüşüp çözüm talep edebilir, çözüm bulamazsanız milli eğitim bakanlığı'na şikayette bulunabilirsiniz.","Ayrımcılık, çocukların haklarını ihlal eden bir suçtur. Okulda çocuğunuzun ayrımcılık yaşadığını düşünüyorsanız, aşağıdaki adımları izleyin:
+
+1. **Ayrımcılık olayını kaydedin:** Olayı",
+70,google/gemma-2-2b-it,"Anayasa madde 47, devletleştirme ve özelleştirme işlemlerinin korunması için ne tür tedbirler alınacağını düzenler","Anayasa madde 47, devletleştirme ve özelleştirme işlemlerinin korunması için devletin, bu işlemleri anayasal ve kanuni düzenlemelere uygun olarak gerçekleştirmesini düzenler. devlet, devletleştirme ve özelleştirme işlemlerini adil ve hukuka uygun olarak gerçekleştirmek zorundadır.","Anayasa madde 47, devletleştirme ve özelleştirme işlemlerinin korunması için **""devlet, bu işlemleri yaparken, vatandaşların haklarını ve özgürlüklerini koruyarak, adil ve eşit bir şekilde yapmalıdır.""",
+71,google/gemma-2-2b-it,Seyahat hürriyeti nedir,"Seyahat hürriyeti, bireylerin türkiye sınırları içinde ve yurt dışında serbestçe dolaşabilme ve seyahat edebilme özgürlüğünü ifade eder. bu hak, bireylerin hareket serbestisini güvence altına alır.","Seyahat hürriyeti, vatandaşların, kendi ülkesinden veya başka bir ülkeye seyahat etme hakkını ifade eder. 
+
+**Açıklama:**
+
+Seyahat hürriyeti, vatandaşların özgürce ülkeye giriş ve çıkış yapabil",
+72,google/gemma-2-2b-it,"Apartman yönetimi, ödemeleri yapmadığında hangi hukuki adımları atabilir?","Ödemeleri yapmadığında, yönetici kararları uygulamak zorundadır ve ödeme yapılmasını sağlamak için yasal yollara başvurabilir.","Apartman yönetimi, ödemeleri yapmadığında aşağıdaki hukuki adımları atabilir:
+
+1. **Ödemelerin geçici olarak durdurulması:** Ödemelerin geçici olarak durdurulması, apartman yönetiminin ödemelerin yapılmasını sağlamak",
+73,google/gemma-2-2b-it,"Anayasa madde 63'e göre, tarih, kültür ve tabiat varlıklarının korunması hakkının ihlali hangi durumlarda söz konusu olur","Anayasa madde 63'e göre, tarih, kültür ve tabiat varlıklarının korunması hakkının ihlali, bu varlıkların korunmasının hukuka aykırı olarak sınırlandırılması veya zarar görmesi durumunda söz konusu olur. devlet, bu tür ihlalleri önlemek ve tarih, kültür ve tabiat varlıklarının korunması hakkını korumakla yükümlüdür.","Anayasa madde 63'e göre, tarih, kültür ve tabiat varlıklarının korunması hakkının ihlali, aşağıdaki durumlarda söz konusu olur:
+
+* **İhlal edilmiş bir yasal düzenleme veya izin verilmemiş bir faaliyet",
+74,google/gemma-2-2b-it,"Mirasçılar, miras bırakanın borçlarını ödemek zorunda mıdır?","4721 sayılı Türk Medeni Kanunu'na göre, mirasçılar, miras bırakanın borçlarından miras payları oranında sorumludur. Yargıtay içtihatları, mirasçıların borçların ödenmesi konusunda hak ve yükümlülüklerini belirler.","Hayır, mirasçılar, miras bırakanın borçlarını ödemek zorunda değildir.",
+75,google/gemma-2-2b-it,"Bir sivil toplum kuruluşu, gençlerin korunma hakkının yasal dayanak olmaksızın kısıtlanması gerektiğini savunmaktadır. Bu durum Anayasanın 58. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 58. Maddesi Türkiye Devleti'nin, devletin gençleri koruma ve geliştirme yükümlülüğüne sahip olduğunu belirtir. Bu tür bir savunma Anayasa'ya aykırıdır.","Evet, Anayasanın 58. Maddesi'ne aykırıdır. 
+ 
+**Açıklama:**
+
+Anayasanın 58. maddesi, ""Her bireyin, çocukluk ve gençlik dönemlerinde, bedensel ve ruhsal geli",
+76,google/gemma-2-2b-it,Toplanma ve karar yeter sayısının belirlenmesindeki anayasal ilkeler nelerdir,"Anayasal ilkeler, tbmm'nin etkin ve demokratik bir şekilde çalışmasını sağlamak amacıyla toplanma ve karar yeter sayılarını belirler. bu ilkeler, yasama sürecinin düzenli işlemesini temin eder.","Anayasal ilkeler, toplanma ve karar yeter sayısının belirlenmesinde şunlardır:
+
+* **Topluma saygı:** Toplanma ve karar verme süreçlerinde, toplumun genel çıkarlarına ve vatandaşların haklarına saygı gösterilmelidir.",
+77,google/gemma-2-2b-it,Nişanlılığın bozulması nedeniyle hediyeleri geri talep edebilir miyim?,"Evet, türk medeni kanunu'na göre nişanlılık evlilik dışında bir sebeple sona ererse, nişanlılar birbirlerine vermiş oldukları hediyeleri geri talep edebilirler.","Hayır, nişanlılığın bozulması nedeniyle hediyeleri geri talep edemezsiniz. 
+
+**Açıklama:**
+
+Nişanlılık sözleşmesi, karşılıklı bir yükümlülük ve bağlılık ilişkisidir. Bu ilişki, ni",
+78,google/gemma-2-2b-it,Hakimlerin ve Savcıların Bağımsızlığı Hangi Anayasa Maddesinde Belirtilmiştir?,140. maddede.,"**Anayasa madde 21**
+
+**Açıklama:**
+
+Anayasa madde 21, hakimlerin ve savcıların bağımsızlığına dair temel bir düzenlemeyi içerir. Bu madde, hakimlerin ve savcıların karar verme süreç",
+79,google/gemma-2-2b-it,"Eğer annemin üzerine olan taşınmazlar, yanlış beyanlarla diğer kardeşim tarafından alındıysa ne yapabilirim?","Miras payınızı korumak için tenkis davası açabilirsiniz. bu dava, mirasçıların saklı paylarını aşan tasarrufların iptalini talep etmenizi sağlar.","Bu durumda, haklarınızı korumak için birkaç adım atabilirsiniz:
+
+1. **İlgili belgeleri incelemek:**  Annemin taşınmazlara sahip olduğu belgeleri (hesap, ipotek, satış sözleşmesi vb.) inceleyin.
+2. **İ",
+80,google/gemma-2-2b-it,"Sanık, bir internet platformunda sahte haberler yayımlayarak kamuoyunu yanıltırsa, hangi suçlamalar gündeme gelir?","Sanık, internet platformunda sahte haberler yayımlayarak kamuoyunu yanıltırsa, 'yanıltıcı bilgi yayma', 'kamuoyunu yanıltma' ve 'medya etik kurallarını ihlal' suçlarıyla karşılaşabilir. Bu suçlar, hapis cezası ve/veya para cezası ile sonuçlanabilir ve yayımlanan bilgilerin düzeltilmesi gerekebilir.","Sanık, **sağlıksız haber yayımlama**, **sağlıksız bilgi yayımlama**, **yanlış bilgi yayımlama** ve **sağlıksız haber paylaşımı** suçlamalarıyla cezalandırılabilir. 
+
+
+**Açıklama:**",
+81,google/gemma-2-2b-it,"Anayasa madde 33, dernek kurma hürriyetinin korunması için hangi güvenceler sağlar","Anayasa madde 33, dernek kurma hürriyetinin korunması için, kişilerin önceden izin almaksızın dernek kurma, derneğe üye olma ve üyelikten ayrılma özgürlüğünün anayasal güvence altında olduğunu belirterek güvenceler sağlar. bu hüküm, örgütlenme ve ifade hürriyetini güvence altına alır. devlet, dernek kurma hürriyetini korumak için gerekli tedbirleri almak zorundadır.","Anayasa madde 33, dernek kurma hürriyetinin korunması için **tüm vatandaşların dernek kurma hakkı** ve **derneklerin kuruluş ve faaliyetleri için özgürlük** güvencelerini sağlar. 
+
+
+**Açık",
+82,google/gemma-2-2b-it,Anayasanın değiştirilmesi teklif edilemeyecek hükümleri nelerdir?,"Anayasanın ilk üç maddesi, değiştirilmesi teklif edilemeyecek hükümlerdir.","Anayasanın değiştirilmesi teklif edilemeyecek hükümleri şunlardır:
+
+* **Anayasanın temel ilkeleri:** Anayasanın temel ilkeleri, yani haklar, özgürlükler ve sorumluluklar gibi temel yapı taşları, değiştirilemez",
+83,google/gemma-2-2b-it,Kooperatif Ödemelerimizi Geri Almak İçin Dava Açarak Daha Kolay Alabilir Miyiz?,"Her Ortağın Kooperatiften Çıkma Hakkı Vardır. Çıkış, Ancak Bir Hesap Senesi Sonu İçin ve En Az 6 Ay Önceden Haber Verilerek Yapılır. Haklı ve Önemli Sebeplerin Varlığı Halinde Kooperatiften Çıkabilir ve Ödediklerinizi İsteyebilirsiniz.","Evet, kooperatiflerin ödemeleri geri almak için dava açabilirsiniz. Ancak, bu süreç karmaşık ve uzun sürebilir. 
+
+**Neden?**
+
+* **Kooperatif Hukuku:** Kooperatiflerin işleyişi ve ödemeleri hakkında ayrıntılı bir huk",
+84,google/gemma-2-2b-it,İş sözleşmesinde belirtilen şartlar değiştirilebilir mi?,"İş sözleşmesinde belirtilen şartlar, işveren ve işçinin karşılıklı anlaşmasıyla değiştirilebilir. ancak, işçinin rızası olmadan yapılan değişiklikler geçersizdir.","**Evet, iş sözleşmesinde belirtilen şartlar değiştirilebilir.**
+
+**Açıklama:**
+
+İş sözleşmesi, tarafların iş ilişkisini düzenleyen bir sözleşmedir. Bu sözleşme, tarafların iş yükü ve hakları, çalışma koşulları",
+85,google/gemma-2-2b-it,Eşimle Aramızda Fiziksel Şiddet Olayı Oldu. Eşim Bana Tazminat Davası Açtı ve Ben de Boşanma Davası Açtım. Ne Olur?,"Her Ne Sebeple Olursa Olsun Eşe Uygulanan Fiziksel Şiddet, Boşanmada Erkeğin Kusurlu Sayılması İçin Yeterlidir. Eşinizin Sizi Tahrik Etmesi, Üstünüze Çok Gelmesi İse Sadece Tazminatta İndirime Yol Açar. Olayın Ayrıntıları Durumu Değiştirebilir. Ancak Bu Kısa Açıklamanıza Göre Sizin Boşanma Davanızın Red, Eşinizin Tazminat Davasının Kabul ile Sonuçlanması Yüksek İhtimaldir. Sonuç Olarak İşin Uzmanı Bir Avukattan Hukuki Yardım Almanızı Şiddetle Tavsiye Ederiz.","Fiziksel şiddet olayı, tazminat ve boşanma davalarını içeren bir hukuki konudur. 
+
+**Tazminat Davası:** Eşiniz tazminat davası açması, fiziksel şiddete uğradığınızı kanıt",
+86,google/gemma-2-2b-it,Anayasanın 12. Maddesi Hangi Konuyu Ele Alır?,Temel hak ve hürriyetleri ele alır.,"Anayasanın 12. Maddesi **""İnsan Hakları""** konularını ele alır.",
+87,google/gemma-2-2b-it,"Bir siyasi parti, basın araçlarının belirli durumlarda devlet tarafından keyfi olarak el konulabileceğini savunmaktadır. Bu durum Anayasanın 30. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 30. Maddesi, basın araçlarının suç aleti olduğu gerekçesiyle zapt ve müsadere edilemeyeceğini belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Evet, Anayasanın 30. Maddesi'ne aykırıdır. 
+ 
+**Açıklama:**
+
+Anayasanın 30. Maddesi, ""Devlet, basın araçlarını kullanmak için gerekli olan hak ve özgürlükleri kor",
+88,google/gemma-2-2b-it,"Bir üniversite profesörü, dersinde basın araçlarının keyfi olarak el konulabileceğini savunmuştur. Bu durum Anayasanın 30. Maddesi ile nasıl çelişir?","Anayasanın 30. Maddesi, basın araçlarının suç aleti olduğu gerekçesiyle zapt ve müsadere edilemeyeceğini belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 30. maddesi, ""**Her vatandaşın, düşüncelerini, inançlarını, görüşlerini özgürce ifade etme hakkı vardır.**""  Bu ifade, basın araçlarının el konulmasıyla ilgili olarak, vatandaşların özgür",
+89,google/gemma-2-2b-it,"Miras paylaşımında adaletsizlik yaşandıysa, hangi adımları atmalıyım?","Miras paylaşımında adaletsizlik yaşandıysa, bir avukata başvurarak dava açabilir ve paylaşımın düzeltilmesini talep edebilirsiniz.","Miras paylaşımında adaletsizlik yaşandığı takdirde, aşağıdaki adımları atmanız önerilir:
+
+1. **Miras paylaşımının adil olmadığını kanıtlayın:**  Miras paylaşımının adil olmadığını kanıtlamak için, hukuki belgeleri,",
+90,google/gemma-2-2b-it,Hukukta 'tortfeasor' nedir?,"Tortfeasor, hukuka aykırı bir eylemde bulunan veya başkalarına zarar veren kişiyi ifade eder. bu terim, genellikle tazminat davalarında sorumlu taraf olarak kullanılır.","**Tortfeasor**, bir kişinin, bir hukuki sorumluluğu veya sorumluluğu nedeniyle, bir davaya veya hukuki işlemde bulunmasıyla ilgili olarak, bir suçlu veya sorumlu kişi.",
+91,google/gemma-2-2b-it,Toplu iş sözleşmesi yapma hakkı neyi kapsar?,"İşçiler ve işverenler, karşılıklı olarak ekonomik ve sosyal durumlarını ve çalışma şartlarını düzenlemek amacıyla toplu iş sözleşmesi yapma hakkına sahiptirler. (madde 53)","Toplu iş sözleşmesi, **işçilerin işverenler tarafından belirlenen iş koşullarını ve çalışma şartlarını kabul etme hakkını** kapsar. 
+
+**Açıklama:**
+
+Toplu iş sözleşmesi, işçilerin ve işverenlerin iş koşullarını ve",
+92,google/gemma-2-2b-it,"Bir grup siyasetçi, tarım arazilerinin herhangi bir yasal dayanak olmadan kısıtlanabileceğini savunmaktadır. Bu durum Anayasanın 45. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 45. Maddesi Türkiye Devleti'nin, tarım arazilerinin amaçlarına uygun şekilde kullanılmasını sağlamak için gerekli tedbirleri alacağını belirtir. Bu tür bir savunma Anayasa'ya aykırıdır.","Evet, Anayasanın 45. Maddesi'ne aykırıdır. 
+ 
+**Açıklama:**
+
+Anayasanın 45. maddesi, ""Tarım arazileri, her vatandaşın hakları ve özgürlükleri için ayr",
+93,google/gemma-2-2b-it,Anayasanın 84. Maddesi Hangi Tarihte Yürürlüğe Girmiştir?,7 Kasım 1982'de yürürlüğe girmiştir.,"Anayasanın 84. Maddesi **1982** yılında yürürlüğe girmiştir. 
+
+
+**Not:** Bu cevap, sorunun doğruluğunu ve anlaşılmasını sağlamak için gerekli bilgileri içerir.",
+94,google/gemma-2-2b-it,Türkiye cumhuriyeti'nin devlet şekli nedir,"Türkiye cumhuriyeti'nin devlet şekli cumhuriyettir. bu, devletin halkın egemenliği altında olduğunu ve yöneticilerin seçimle iş başına geldiğini ifade eder.",Türkiye Cumhuriyeti'nin devlet şekli **devlet-cumhuriyeti**'dir.,
+95,google/gemma-2-2b-it,Sanayi malları için satış sonrası hizmetler nasıl olmalıdır?,"Sanayi mallarının kullanım ömrü boyunca, bakım ve onarım hizmetleri sunmak için yeterli teknik personel ve yedek parça bulundurulmalıdır.","Sanayi malları için satış sonrası hizmetler, **müşteri memnuniyetini ön planda tutarak** ve **hizmet kalitesini yüksek tutarak** olmalıdır. Bu hizmetler şunları içerebilir:
+
+* **Teknik destek:** Malın kullanımında sorunlar",
+96,google/gemma-2-2b-it,"Bir grup vatandaş, aile birliğinin korunmasının devlet tarafından keyfi olarak kısıtlanabileceğini savunmaktadır. Bu durum Anayasanın 41. Maddesi ile nasıl çelişir?","Anayasanın 41. Maddesi, ailenin Türk toplumunun temeli olduğunu ve devletin, ailenin huzur ve refahını sağlamak için gerekli tedbirleri alacağını belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 41. maddesi, aile birliğinin korunmasını ve bu birliğin devlet tarafından kısıtlanmaması gerektiğini belirtir. Bu nedenle, devlet tarafından aile birliğinin keyfi olarak kısıtlanması, Anayasanın 41",
+97,google/gemma-2-2b-it,Sıkıyönetim Cumhurbaşkanının başkanlığında toplanan Bakanlar Kurulu kararı ile ilan edilmiştir. Bu durum Anayasanın 122. Maddesi'ne uygun mudur?,"Evet, Anayasanın 122. Maddesi, sıkıyönetimin Cumhurbaşkanının başkanlığında toplanan Bakanlar Kurulu kararı ile ilan edilebileceğini belirtir. Bu durum maddeye uygundur.","Hayır, Anayasanın 122. Maddesi'ne uygun değildir. 
+
+**Açıklama:**
+
+Anayasanın 122. Maddesi, Cumhurbaşkanının başkanlığında toplanan Bakanlar Kurulu kararı ile ilan edilmesi",
+98,google/gemma-2-2b-it,Kira artışı nasıl yapılır?,"Kira artışı, kira sözleşmesinde belirtilen oranlarda ve yasal sınırlamalar çerçevesinde yapılır. genellikle yıllık olarak uygulanır.","Kira artışı, kira sözleşmesinin tarafların tarafı ile anlaşılmasıyla yapılır.",
+99,google/gemma-2-2b-it,Kamu denetçiliği kurumu'nun kararları bağlayıcı mıdır,"Kamu denetçiliği kurumu'nun kararları bağlayıcı değildir, ancak kamu idareleri için tavsiye niteliği taşır. i̇dareler, kurumun önerilerini dikkate alarak sorunların çözümüne yönelik adımlar atabilirler.","Hayır, kamu denetçiliği kurumunun kararları **bağlayıcı değildir**. 
+
+**Açıklama:**
+
+Kamu denetçiliği kurumları, kamu kurumlarının finansal ve işletmesel faaliyetlerini denetlemekle görevlidir",

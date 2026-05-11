@@ -1,0 +1,311 @@
+index,model_name,question,reference_answer,model_answer,error
+0,Qwen/Qwen2.5-1.5B-Instruct,Anayasanın 90. Maddesi Nasıl Uygulanır?,Milletlerarası antlaşmaların TBMM tarafından onaylanmasıyla uygulanır.,"Anayasanın 90. Maddesi, ""Hükümetin Halkı ile İlişkileri"" olarak adlandırılır. Bu maddi, hükümetin halkına karşı yapılan hizmetlerin ve hizmetlere ilişkin hakların belirl",
+1,Qwen/Qwen2.5-1.5B-Instruct,Hukukta 'legitimate expectation' nedir?,"Legitimate expectation, bir kişinin belirli bir eylem veya karar beklentisinin hukuken korunabilir olduğuna dair bir ilkeyi ifade eder. bu beklenti genellikle devlet veya kamu organlarının tutarlı davranışlarına dayanır.","Legitimate expectation, bir kişinin beklediği veya alacağı durumunun, belirlenmiş bir sözleşmede veya diğer hukuki anlaşmada belirtilen duruma uyması gereken bir durumdur. Bu durum, belirli bir süre boy",
+2,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 172'ye göre, devletin sanayi ve ticareti destekleme konusundaki görevleri nelerdir?","Anayasa madde 172'ye göre, devlet, sanayi ve ticaretin geliştirilmesi ve rekabet gücünün artırılması için gerekli tedbirleri alır. i̇şletmelerin verimliliğini ve yenilikçiliğini artırmak için teşvik ve destekler sağlanır.","Devletin sanayi ve ticareti destekleme görevlerinin temel özellikleri şunlardır:
+
+1. Sanayi ve ticaret sektörünün etkili bir şekilde yönetilmesi
+2. Sanayi ve ticaret sektörünün gelişimini desteklem",
+3,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 158, uyuşmazlık mahkemesi'nin kuruluşu ve görevlerine müdahale hangi durumlarda yasaktır","Anayasa madde 158'e göre, uyuşmazlık mahkemesi'nin kuruluşu ve görevlerine müdahale, uyuşmazlık mahkemesi'nin adli, idari ve askeri yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözmemesi veya anayasa mahkemesi başkanı'nın başkanlığında çalışmaması durumunda yasaktır. devlet, bu tür müdahaleleri önlemek ve uyuşmazlık mahkemesi'nin kuruluşu ve görevlerini korumakla yükümlüdür.","Anayasa Madde 158, uyuşmazlık mahkemesi'nin kuruluşu ve görevlerine müdahale edilmez. Bu anayasal hükümler, uyuşmazlık mahkemelerinin kurulması ve görevlerini",
+4,Qwen/Qwen2.5-1.5B-Instruct,"Bir grup avukat, Türkiye Büyük Millet Meclisi Başkanı'nın Cumhurbaşkanlığı seçimlerine katılamayacağını belirten Anayasa maddesinin iptali için başvuruda bulunmuştur. Bu başvuru Anayasanın 94. Maddesi ile nasıl çelişir?","Anayasanın 94. Maddesi, Türkiye Büyük Millet Meclisi Başkanı'nın Cumhurbaşkanlığı seçimlerine katılamayacağını belirtir. Bu maddeye aykırı bir başvuru Anayasa'ya aykırıdır.","Anayasa maddesi, bir grup avukatın bir hükümet göreviyle ilgili bir başvuru oluşturmasını engellemektedir. Bu maddede, bir grup avukatın bir hükümet göreviyle ilgili bir başvuru oluşturmasını engelleyen",
+5,Qwen/Qwen2.5-1.5B-Instruct,Grev ve lokavt hakkının önemi nedir,"Grev ve lokavt hakkı, çalışanların ve işverenlerin toplu iş uyuşmazlıklarında haklarını savunmalarını ve taleplerini dile getirmelerini sağlar. bu haklar, işçi-işveren ilişkilerinin dengeli ve adil bir şekilde yürütülmesini destekler.","Grev ve lokavt hakkı, bir vatandaşın yasalara karşı hareket etme yetkisi. Bu haklar, vatandaşların yasa dışı davranışları veya yasa dışı durumlarla karşı karşıya olup, bu durumlarda yasa dışı hareket yap",
+6,Qwen/Qwen2.5-1.5B-Instruct,"Cumhurbaşkanlığı seçimleri, Cumhurbaşkanının görev süresi dolmasına yetmiş gün kala tamamlanmıştır. Bu durum Anayasanın 102. Maddesi ile nasıl çelişir?","Anayasanın 102. Maddesi, seçimlerin görev süresinin dolmasından önceki altmış gün içinde tamamlanmasını öngörür. Yetmiş gün kala tamamlanması bu maddeye aykırıdır.","Anayasanın 102. Maddesi, Cumhurbaşkanı seçimi sırasında veya sonrasında yapılan bir tarafta yapılan seçimlere ilişkin yasal düzenlemelerin geçerli olup olmadığını kontrol etmek için kullanılır. Bu durumda",
+7,Qwen/Qwen2.5-1.5B-Instruct,Türk ceza kanunu'na göre kasten öldürme suçu nedir?,Bir kişiyi öldürme kastıyla işlenen suçtur.,"Kasten öldürme suçunun en önemli özelliklerinden biri olan ""sürekli suç"" özelliğinin yanı sıra, bu suç ayrıca ""hükümetin yasa dışı davranışlarına karşı tutkuyla karşılanması"" ve ""yasa dışı davranışların te",
+8,Qwen/Qwen2.5-1.5B-Instruct,"Bir milletvekili, bir kamu idaresinin faaliyetlerini denetlemek için verdiği soru önergesine cevap alamamıştır. Bu durum Anayasanın 98. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 98. Maddesi, verilen soru önergelerinin cevaplandırılmasını öngörür. Cevap alınamaması bu maddeye aykırıdır.","**Anayasanın 98. Maddesi**:
+
+1. **İçeriği**: ""Kamu idareleri, hükümetin görevlilerinden veya diğer özel yetkililere verilen görevleri yerine getirmeyen veya yerine getirmede bulunmay",
+9,Qwen/Qwen2.5-1.5B-Instruct,"Sanık, bir finans kurumunda yatırım tavsiyeleri vererek müşterileri yanıltıp zarar uğratırsa, hangi suçlamalar gündeme gelir?","Sanık, finans kurumunda yatırım tavsiyeleri vererek müşterileri yanıltıp zarar uğratırsa, 'mali dolandırıcılık', 'yanıltıcı tavsiyelerde bulunma' ve 'ticari etik kurallarının ihlali' suçlarıyla karşılaşabilir. Bu suçlar, hapis cezası ve/veya para cezası ile sonuçlanabilir ve mağdurların zararının tazmini gerekebilir.","Sanık, bir finans kurumunda yatırım tavsiyeleri vererek müşterileri yanıltıp zarar uğratırsa, hangi suçlamalar gündeme gelir? (a) Yatırım诈骗 (b) Yatırım yasası ihlal (",
+10,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 129'a göre, devlet memurları ve diğer kamu görevlilerinin görev ve sorumluluklarının korunması için hangi şartlar sağlanmalıdır?","Anayasa madde 129, devlet memurları ve diğer kamu görevlilerinin görev ve sorumluluklarının korunması için, kamu görevlilerinin anayasaya ve kanunlara sadakatle bağlı kalmaları, halkın hizmetinde dürüstlükle çalışmaları, tarafsız davranmaları ve amirlerine itaat etmeleri şartını anayasal güvence altına alarak güvenceler sağlar.","Devlet memurlarının ve diğer kamu görevlilerinin görev ve sorumluluklarının korunması için, devletin yasalara uygun bir düzenlemeye ihtiyaç vardır. Bu düzenlemeye göre, devlet memurlarının ve diğer kamu görevlilerinin",
+11,Qwen/Qwen2.5-1.5B-Instruct,Milletvekilliğinin düşmesi kararına itiraz nasıl yapılır,"Milletvekilliğinin düşmesi kararına, anayasa mahkemesi'ne bireysel başvuru yapılarak itiraz edilebilir. anayasa mahkemesi, kararın anayasal ve yasal esaslara uygunluğunu denetler.","Milletvekilliğin düşmesini reddetmek için:
+
+1. Hükümetin milletvekili olarak kabul edilmediği bir milletvekiliye karşı bir talep yaratmak
+2. Milletvekiliye karşı bir",
+12,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 151, anayasa mahkemesi'ne bireysel başvuru yapma yetkisinin sınırlandırılmasını nasıl düzenler","Anayasa madde 151, anayasa mahkemesi'ne bireysel başvuru yapma yetkisinin sınırlandırılmasını, anayasa'da güvence altına alınmış temel hak ve özgürlüklerin, avrupa i̇nsan hakları sözleşmesi kapsamındaki hakların kamu gücü tarafından ihlal edildiği iddiasıyla ve olağan kanun yollarının tüketilmesinden sonra bireysel başvuru yapılma şartı ile düzenler. bu sınırlamalar, bireysel başvuru yapma yetkisini ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır. bu hüküm, bireysel başvuru yapma yetkisinin korunmasını ve sınırlamaların keyfi olmamasını sağlar.","Anayasa mahkemesi'ne bireysel başvuru yapma yetkisi sınırlanmamıştır. Bu yetki, her bir vatandaşın kendisini mahkemeye başvurması için gereklidir.
+
+Bu soruyu daha detaylı ve",
+13,Qwen/Qwen2.5-1.5B-Instruct,Beyanname nedir?,"Katma değer vergisi, mal ve hizmet teslimlerinde alınan, nihai tüketicinin ödediği dolaylı bir vergidir.","Beyanname, bir kişinin adını veya soyadını belirtmek için kullanılan bir tane. 
+
+Bu soruyu daha detaylı ve uzunca bir şekilde açıklamak gerekirse:
+
+1. Defterin temel amacı: Defter, bilgi tutma ve",
+14,Qwen/Qwen2.5-1.5B-Instruct,İşsizlik maaşı nasıl hesaplanır?,"İşsizlik maaşı, son 4 aylık brüt kazançların ortalaması alınarak hesaplanır. brüt kazancın %40'ı oranında maaş ödenir.","İşsizlik maaşı hesaplanırken, işten çıkarılan para, işten çıkarılan para ile işten çıkarılan para ile biriktirilir. Bu tutarın %15'ini 2019 yılına göre yeni işsizlik maa",
+15,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 9'a göre, yargı yetkisinin tarafsız ve bağımsız bir şekilde kullanılması nasıl sağlanır","Anayasa madde 9'a göre, yargı yetkisinin tarafsız ve bağımsız bir şekilde kullanılması, yargı organlarının karar verirken hiçbir baskı, etki veya müdahale altında kalmadan hareket etmeleri ile sağlanır. yargı organları, yargı yetkisini millet adına kullanarak adaletin tarafsız ve objektif bir şekilde sağlanmasını temin eder. bu hüküm, yargı organlarının bağımsızlığını ve tarafsızlığını güvence altına alır.","1. Anayasa madde 9'ün 3. maddesinin 2. saptanı ile ilgili
+2. Anayasa madde 9'ün 4. maddesinin 2. saptanı ile ilgili",
+16,Qwen/Qwen2.5-1.5B-Instruct,Kira tespit davası nedir?,"Kira tespit davası, kira bedelinin taraflar arasında anlaşmazlık konusu olması durumunda, kira bedelinin mahkeme tarafından belirlenmesi için açılan davadır.","Kira tespit davası, bir kişinin kira edilen bir mal veya maliyeti üzerindeki haklarını korumak için yürürlüğe giren bir davayı ifade eder. Bu davada, kira edilen malın veya maliyetin üzerinde",
+17,Qwen/Qwen2.5-1.5B-Instruct,Şiddet mağdurları için hangi tedbirler alınabilir?,"Aile mahkemesi, şiddete yönelik söz ve davranışlarda bulunulmaması, müşterek evden uzaklaştırma gibi tedbirler alabilir.","1. Şiddet mağdurunun tutulması
+2. Şiddet mağdurunun silinmesi
+3. Şiddet mağdurunun koruma
+
+Bu soruyu cevaplayarak, hangi seçeneklerin şidd",
+18,Qwen/Qwen2.5-1.5B-Instruct,"Devlet, yabancı ülkelerde çalışan türk vatandaşlarının aile birliğini nasıl korur?","Devlet, yabancı ülkelerde çalışan türk vatandaşlarının aile birliğinin, çocuklarının eğitiminin, kültürel ihtiyaçlarının ve sosyal güvenliklerinin sağlanması, anavatanla bağlarının korunması ve yurda dönüşlerinde yardımcı olunması için gereken tedbirleri alır. (madde 62)","Devlet, yabancı ülkelerde yaşayan Türk vatandaşlarının aile birliğini korumak için:
+
+1. Türk vatandaşların evlerinin yerini tutan yasaları uygular.
+2. Türk vatandaşların evlerinin yerini tutan yasaları uygular.
+3",
+19,Qwen/Qwen2.5-1.5B-Instruct,Yerleşme hürriyetinin korunmasında devletin rolü nedir,"Devlet, yerleşme hürriyetini korumakla yükümlüdür. bu, yasal düzenlemeler yaparak, denetim mekanizmaları kurarak ve ihlalleri önleyerek gerçekleştirilir.","Devletin yerleşme hürriyetinin korunması için:
+
+1. Yerleşim politikalarını düzenlemek
+2. Yerleşim kurumlarını yönetmek
+3. Yerleşim hizmetleri sunmak
+4. Yerleşim",
+20,Qwen/Qwen2.5-1.5B-Instruct,Özel sektörde mobbinge maruz kaldım ne yapmalıyım,Anayasa'nın 49. maddesi çalışma hakkını güvence altına alır. özel sektörde mobbinge maruz kaldıysanız işvereninize durumu bildirerek çözüm talep etmeli ve gerekirse i̇ş mahkemesi'ne başvurarak tazminat talep edebilirsiniz.,"Mobbinge karşıtı bir politika kurmak, özel sektördeki iş insanları için güvenli olmaları sağlamak, özel sektördeki iş insanlarının haklarını korumak ve özel sektördeki iş insanlarının kendi kendilerine karşı yasal olarak mücadele et",
+21,Qwen/Qwen2.5-1.5B-Instruct,"Kamu iktisadi teşebbüslerinin asli ve sürekli görevleri, memurlar ve diğer kamu görevlileri eliyle yürütülmemektedir. Bu durum Anayasanın 128. Maddesi'ne uygun mudur?","Hayır, Anayasanın 128. Maddesi, kamu iktisadi teşebbüslerinin asli ve sürekli görevlerinin memurlar ve diğer kamu görevlileri eliyle yürütülmesini öngörür. Bu durum maddeye aykırıdır.","**Anayasanın 128. Maddesi**:
+
+- **Adı**: ""İktisadi Teşebbüslerin Aslı ve Sürekliliği""
+- **Nedeni**: İktisadi teşebbüslerin asli ve sürekli görev",
+22,Qwen/Qwen2.5-1.5B-Instruct,"Bir televizyon dizisinde, vergi yükümlülüğünün keyfi olarak belirlenebileceği savunulmuştur. Bu durum Anayasanın 73. Maddesi ile nasıl çelişir?","Anayasanın 73. Maddesi, herkesin kamu giderlerini karşılamak üzere mali gücüne göre vergi ödemekle yükümlü olduğunu belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 73. Maddesi, ""Televizyon ve radio programları"" bölümüne göre, vergi yükümlülüğü genellikle keyfi olarak belirlenmektedir. Ancak, bu durum televizyon dizilerinde",
+23,Qwen/Qwen2.5-1.5B-Instruct,"Bir öğrenci, okulda tarih, kültür ve tabiat varlıklarının korunma hakkının herhangi bir yasal dayanak olmadan kısıtlanması gerektiğini savunmaktadır. Bu durum Anayasanın 63. Maddesi ile nasıl çelişir?","Anayasanın 63. Maddesi, devletin tarih, kültür ve tabiat varlıklarını koruma yükümlülüğüne sahip olduğunu belirtir. Bu tür bir savunma Anayasa'ya aykırıdır.","Anayasanın 63. Maddesi, ""Kültür ve tabiat varlıkları koruma"" konusuyla ilgili olan bir yasal ayırım değildir. Bu durum, Anayasanın 104. Maddesine göre karşılanır.",
+24,Qwen/Qwen2.5-1.5B-Instruct,Akıl hastalığı sebebiyle boşanma nasıl açılır?,"Akıl hastalığı sebebiyle boşanma davası, eşlerden birinin akıl hastalığı olması durumunda açılır.","Akıl hastalığı sebebiyle boşanma için:
+
+1. Akıl hastalığının nedeni olan akıllı olmayan veya yetersiz akılın belirlenmesi gerekiyor.
+2. Bu akıl hastalığını tedavi",
+25,Qwen/Qwen2.5-1.5B-Instruct,Kooperatiften Çıkma ve Ödemeleri Geri Alma Süreci Nasıl İşler?,"Her Ortağın Kooperatiften Çıkma Hakkı Vardır. Çıkış, Ancak Bir Hesap Senesi Sonu İçin ve En Az 6 Ay Önceden Haber Verilerek Yapılır. Haklı ve Önemli Sebeplerin Varlığı Halinde Kooperatiften Çıkabilir ve Ödediklerinizi İsteyebilirsiniz.","Kooperatiften Çıkma ve Ödemeleri Geri Alma Süreci, genellikle bir işbirliği kurumu veya kooperatifi tarafından gerçekleştirilir. Bu süreçte, kooperatif üyeleri arasında anlaşmazlıkların çözülmesi, anlaşmaz",
+26,Qwen/Qwen2.5-1.5B-Instruct,Kamu kurumu niteliğindeki meslek kuruluşlarının eğitim faaliyetleri nelerdir,"Kamu kurumu niteliğindeki meslek kuruluşları, meslek mensuplarına yönelik seminerler, kurslar, sertifika programları ve eğitim faaliyetleri düzenler. bu faaliyetler, mesleki bilgi ve becerilerin artırılmasını hedefler.","1. Eğitim faaliyetlerinin genel niteliği
+2. Eğitim faaliyetlerinin özel niteliği
+3. Eğitim faaliyetlerinin temel niteliği
+4. Eğitim faaliyetlerinin öznel niteliği
+
+Cevabınız",
+27,Qwen/Qwen2.5-1.5B-Instruct,İşkence yasağı nedir?,"İnsan hakları, insanın sırf insan olduğu için sahip olduğu temel hak ve özgürlüklerdir.","İşkence yasadışı bir durum olup, işkence yasası, insanlar için güvenli bir ortamı oluşturmak amacıyla kurulmuştur. İşkence yasadışı bir durum olup, işkence yasası, insanlar için güvenli bir",
+28,Qwen/Qwen2.5-1.5B-Instruct,Hüküm nedir?,"İdari yargı, idarenin işlemlerine karşı açılan davaların görüldüğü yargı koludur.","1. Hükümetin emri
+2. Hükümetin emriyle ilgili bir yasa veya mevzuat
+3. Hükümetin emriyle ilgili bir yasa veya mevzuatın belirttiği bir y",
+29,Qwen/Qwen2.5-1.5B-Instruct,Bilgi edinme ve kamu denetçisine başvurma hakkı hangi durumları kapsar?,"Herkes, bilgi edinme ve kamu denetçisine başvurma hakkına sahiptir. (madde 74)","1. Sosyal güvenlik
+2. Hükümetin işleri
+3. Sosyal güvenlik ve kamu denetçisine başvurmak için gereken diğer durumlara
+4. Sosyal güvenlik ve kamu denetçisine başvurmak için gere",
+30,Qwen/Qwen2.5-1.5B-Instruct,"Sanık, bir spor organizasyonunda kurallara aykırı olarak doping yapıp diğer sporculara haksız avantaj sağlarsa, hangi suçlamalar gündeme gelir?","Sanık, spor organizasyonunda kurallara aykırı olarak doping yapıp diğer sporculara haksız avantaj sağlarsa, 'doping kural ihlali', 'spor etik kurallarını ihlal' ve 'haksız rekabet' suçlarıyla karşılaşabilir. Bu suçlar, disiplin cezaları ve/veya adli cezalarla sonuçlanabilir ve mağdurların zararının tazmini gerekebilir.","Doping suçları
+
+Bu soruyla ilgili aşağıdaki bilgilere bakınız:
+
+1. Sanık, bir spor organizasyonunda kurallara aykırı olarak doping yapıp diğer sporculara haksız avantaj sağlarsa, bu durumda sanık",
+31,Qwen/Qwen2.5-1.5B-Instruct,Evlatlık ile biyolojik çocuklar arasındaki miras hakkı farkları nelerdir?,"Evlatlık, biyolojik çocuklar gibi mirasçıdır ve aynı haklara sahiptir. ancak evlatlığın biyolojik ailesi ile olan mirasçılık ilişkisi kesilir.","Evlatlık ile biyolojik çocuklar arasındaki miras hakkı farkları, evlatların doğanın (biyolojik) evlatlarına karşı olan bir hak. Bu hak, evlatların doğanın (biyolojik) evlatına karşı yapılan",
+32,Qwen/Qwen2.5-1.5B-Instruct,"Bir milletvekili, parlamentoda dernek kurma hakkının herhangi bir yasal dayanak olmadan kısıtlanabileceğini savunmaktadır. Bu durum Anayasanın 32. Maddesi ile nasıl çelişir?","Anayasanın 32. Maddesi, herkesin önceden izin almaksızın dernek kurma hakkına sahip olduğunu belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 32. Maddesi, milletvekiliye ""parlamento hakları"" hakkını verirken, bu hakları sınırlamak için ""yasa dışı"" bir yasal dayanak gerektirir.
+
+Bu soruyu cev",
+33,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 136'ya göre, diyanet i̇şleri başkanlığı'nın kuruluşu ve görevlerinin sınırlandırılması hangi koşullarda yapılabilir","Anayasa madde 136'ya göre, diyanet i̇şleri başkanlığı'nın kuruluşu ve görevlerinin sınırlandırılması, sadece genel idare içinde yer alma, laiklik ilkesi doğrultusunda çalışma, siyasi görüş ve düşüncelerin dışında kalma ve milletçe dayanışma ve bütünleşmeyi amaç edinme şartı ile yapılabilir. bu sınırlamalar, başkanlığın özerkliğini ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır.","Diyanet İşleri Başkanlığı'nin kuruluşu ve görevlere sınırların ayarlanması, Anayasa Madde 136'ye göre, şu koşullara sahiptir:
+
+- Diyanet İşleri Başkanlığı'nin kuruluşu, İslam dininin",
+34,Qwen/Qwen2.5-1.5B-Instruct,Anayasanın 143. Maddesi Nedir?,"Anayasanın 143. maddesi, devlet güvenlik mahkemelerine ilişkin hükümleri içerir.","Anayasanın 143. Maddesi ""Kesinlikle Hükümetin Yeteriyle Çalışması"" adlı bir maddedir. Bu maddenin amacı, hükümetin yeteriyle çalışması için gereken koşulları belirt",
+35,Qwen/Qwen2.5-1.5B-Instruct,Hangi tür bilgiler özel nitelikli kişisel veri olarak kabul edilir?,"Irkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi, diğer inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkumiyeti ve güvenlik tedbirleriyle ilgili verileri ile biyometrik ve genetik bilgiler.","1. Sosyal Bilgi
+2. Eğitim Bilgisi
+3. Sağlık Bilgisi
+4. Diğer
+
+Bu sorunun doğru cevabı hangisidir? Soruyla ilgili bilgiye bakarak cevabınızı belirtin.
+Ö",
+36,Qwen/Qwen2.5-1.5B-Instruct,Tbmm başkanlık divanında kimler bulunur?,"Türkiye büyük millet meclisinin başkanlık divanı, meclis üyeleri arasından seçilen meclis başkanı, başkanvekilleri, katip üyeler ve i̇dare amirlerinden oluşur. (madde 94)","1. Sıradan vatandaşlar
+2. TBM'de görev yapmış kişiler
+3. TBM'de görev yapmamış kişiler
+
+Bu sorunun doğru cevabı hangisidir? Soruyla ilgili bilgiye bakarak cev",
+37,Qwen/Qwen2.5-1.5B-Instruct,Kvk kurulu üyeleri hangi durumlarda görevden alınır?,"Seçilmek için gereken şartları taşımadıklarının sonradan anlaşılması, görevleriyle ilgili olarak işledikleri suçlardan dolayı haklarında verilen mahkumiyet kararının kesinleşmesi, görevlerini yerine getiremeyeceklerinin sağlık kurulu raporuyla kesin olarak tespit edilmesi, görevlerine izinsiz, mazeretsiz ve kesintisiz olarak on beş gün ya da bir yılda toplam otuz gün süreyle devam etmediklerinin tespit edilmesi, bir ay içinde izinsiz ve mazeretsiz olarak toplam üç, bir yıl içinde toplam on kurul toplantısına katılmadıklarının tespit edilmesi hallerinde kvk kurulu kararıyla üyelikleri sona erer. (kvkk md.21/f.13)","1. Kötü bir durumda
+2. Hükümetin kararına dayanarak
+3. Sınav sonucunda
+4. Kullanıcıdan istenir
+
+Yorumlar:
+
+1. Soru: ""Kvk kurulu üyeleri hangi",
+38,Qwen/Qwen2.5-1.5B-Instruct,"Bir üniversite profesörü, dersinde sağlıklı ve dengeli bir çevrede yaşama hakkının keyfi olarak kısıtlanabileceğini savunmuştur. Bu durum Anayasanın 56. Maddesi ile nasıl çelişir?","Anayasanın 56. Maddesi, herkesin sağlıklı ve dengeli bir çevrede yaşama hakkına sahip olduğunu belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 56. Maddesi, ""Kurumsal ve özel yetkililerin haklarını koruma"" konusuyla ilgili değildir. Bu durum, Anayasanın 104. Maddesine aittir. 104.",
+39,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 73, vergi ödevi yükümlülüğünün ihlali durumunda ne tür hukuki mekanizmalar devreye girer","Anayasa madde 73'e göre, vergi ödevi yükümlülüğünün ihlali durumunda, vatandaşların hukuki yollara başvurarak haklarını arama ve ihlallerin giderilmesini talep etme hakkı vardır. devlet, vergi ödevi yükümlülüğünü korumak ve ihlallerin engellenmesini sağlamakla yükümlüdür.","İhliyetin sona ermesi durumunda, vergi ödevi yükümlülüğü için yasal bir hukuk mekanizması yoktur. Ancak, bu durumu koruma amaçlı, vergi ödevi yüküml",
+40,Qwen/Qwen2.5-1.5B-Instruct,Eğitim ve öğrenim hakkının ihlali durumunda başvuru yolları nelerdir,"Eğitim ve öğrenim hakkının ihlali durumunda bireyler ulusal yargı mercilerine başvurabilir, eğitim kurumlarına şikayette bulunabilir ve uluslararası insan hakları mekanizmalarına müracaat edebilir.","Eğitim ve öğrenim hakkının ihlali durumunda başvuru yolları:
+
+1. Eğitim Hakkı Mücadelesi (EHM): EHM, eğitim ve öğrenme hakkını ihlal eden kişinin haklarını koruyan bir mahkeme kurumudır. Bu mah",
+41,Qwen/Qwen2.5-1.5B-Instruct,Arsamızın yol genişletilmesi nedeniyle 50 m²'lik bir kısmı kamulaştırılacak. yeni arsa ölçülerinden dolayı yapacağımız ev daha küçük olacak. kazanılmış hakkımızı kaybeder miyiz?,"Evet, kamulaştırma nedeniyle değer kaybı meydana geliyorsa, bunun tazmini için mahkeme bilirkişiler belirleme yapacaktır. i̇darece önerilen bedeli kabul etmemeli ve bedel tespit davası açmalısınız.","Hayır, kazanılmış hakkımızı kaybetmedik.
+
+Bu soruyla ilgili belirli bir hukuki kanun veya yasayı vurgulayabiliriz. Soruyu tam olarak anlayarak cevaplayın.
+Bu soruda, yeni ar",
+42,Qwen/Qwen2.5-1.5B-Instruct,Tahrik nedir?,"Tahrik, bir kişinin aklının ve iradesinin bir suç işlemekten ciddi bir şekilde etkilenmesi sonucu, işlediği suçun cezasının hafifletilmesine neden olabilen bir durumdur.","Tahrik, bir ülkenin ekonomik durumunun belirlenmesi için kullanılan bir yöntemdir. Bu yöntem, ülkenin ekonomik durumu hakkında bilgi edinebilir ve belirsizlikleri çözümler. Tahrik, ek",
+43,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 68'e göre, siyasi partiler kurma hakkının sınırlandırılması hangi koşullarda yapılabilir","Anayasa madde 68'e göre, siyasi partiler kurma hakkının sınırlandırılması, ancak kanunla ve demokratik toplum düzeninin gereklerine uygun olarak yapılabilir. bu sınırlamalar, bu hakkı ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır.","1) Siyasi partilerin kurulması için bir parti veya daha fazlası mevcut olmalıdır.
+2) Siyasi partilerin kurulması için bir parti veya daha fazlası mevcut olmamalıdır.
+3) Siyasi part",
+44,Qwen/Qwen2.5-1.5B-Instruct,Anayasanın 84. Maddesiyle İlgili Tartışmalar Nelerdir?,Milletvekilliğinin düşme sebepleri ve süreçlerinin sınırları ve uygulanması üzerine tartışmalar olabilir.,"Anayasanın 84. Maddesi ile tartışılmak üzere yapılan görüşmeler, genellikle:
+
+a) Hükümetin veya hükümetin temsilcilerinin görüşmesi olur.
+b) İnsan hakları konusundan bahsediyor.",
+45,Qwen/Qwen2.5-1.5B-Instruct,Dedemden kalan malın paylaşımı hakkında sorun yaşıyoruz. ne yapmalıyız?,"Miras paylaşımı konusunda zorlanıyorsanız, miras hukukunda uzman bir avukattan profesyonel yardım almanız yararlı olacaktır.","1) Malı verenin evine gidebiliriz.
+2) Malı verenin evine gidebiliriz.
+3) Malı verenin evine gidebiliriz.
+4) Malı verenin evine gidebiliriz",
+46,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 101, cumhurbaşkanının seçilme koşullarının sınırlandırılmasını nasıl düzenler","Anayasa madde 101, cumhurbaşkanının seçilme koşullarının sınırlandırılmasını, kırk yaşını doldurmuş, yükseköğrenim yapmış, milletvekili seçilme yeterliliğine sahip türkiye cumhuriyeti vatandaşı olma şartı ile düzenler. bu sınırlamalar, cumhurbaşkanının seçilme koşullarını ihlal etmemeli ve ölçülülük ilkesine uygun olmalıdır. bu hüküm, cumhurbaşkanının seçilme koşullarının korunmasını ve sınırlamaların keyfi olmamasını sağlar.","Anayasa madde 101, cumhurbaşkanının seçilme koşullarının sınırlandırılmasını düzenlemektedir. Bu anlayış, cumhurbaşkanının seçimi için genel bir kurumun (yani cumhuriyet",
+47,Qwen/Qwen2.5-1.5B-Instruct,TBMM'nin Bilgi Edinme ve Denetim Yetkisi Hangi Anayasa Maddesinde Belirtilmiştir?,98. maddede.,"1. Sosyal Hukuk
+2. Sivil Hukuk
+3. Uluslararası Hukuk
+4. İş Hukuku
+
+Bu soru, TBMM'nin bilgi edinme ve denetim yetkisini belirleyen an",
+48,Qwen/Qwen2.5-1.5B-Instruct,"Tüketici, satın aldığı ayıplı mal için hangi haklara sahiptir?","6502 sayılı Tüketicinin Korunması Hakkında Kanun'a göre, tüketici, satın aldığı ayıplı mal için ücretsiz onarım, malın değiştirilmesi, bedel indirimi veya bedel iadesi talep edebilir. Yargıtay içtihatları, tüketicinin bu haklarını kullanabilmesi için ayıbın varlığını ispatlaması gerektiğini vurgular.","1. Hükümetin emriye göre
+2. Tüketiciye ait
+3. Müşteriye ait
+
+Bu sorunun doğru cevabı:
+
+3. Müşteriye ait
+
+Çözümü açıklamak g",
+49,Qwen/Qwen2.5-1.5B-Instruct,Herhangi bir gerçek veya tüzel kişi aynı zamanda hem veri sorumlusu hem de veri işleyen olabilir mi?,"Veri sorumlusu, kişisel verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan gerçek veya tüzel kişidir. bu kişiler, gerçek kişiler olabileceği gibi, kamu kurumları, şirketler, dernekler veya vakıflar gibi tüzel kişiler de olabilecektir.","__________
+
+1. Evet
+2. Hayır Soru: Herhangi bir gerçek veya tüzel kişi aynı zamanda hem veri sorumlusu hem de veri işleyen olabilir mi? Cevap: 2. Hayır
+
+Bu sorunun doğru ce",
+50,Qwen/Qwen2.5-1.5B-Instruct,İdarenin bazı görevleri kanunla düzenlenmemiş ve bir bütün olarak ele alınmamıştır. Bu durum Anayasanın 123. Maddesi ile nasıl çelişir?,"Anayasanın 123. Maddesi, idarenin tüm görevlerinin kanunla düzenlenmesini ve bir bütün olarak ele alınmasını öngörür. Bu durum maddeye aykırıdır.","Anayasanın 123. Maddesi, idaricilerin işbirliği konusunda belirlenen kurallara göre, idaricilere işbirliği yapma ve işbirliği içindeki görevlere ait hakları ve yetkileri kor",
+51,Qwen/Qwen2.5-1.5B-Instruct,İdari yargı nedir?,"Hukuki dinlenilme hakkı, tarafların yargılama sürecinde savunmalarını yapabilme ve delillerini sunabilme hakkıdır.","Idarı, bir devletin idari yetkilerini yöneten ve bu yetkiyi yürütme ve kontrol etmeyi yerine getiren kurumdır. Bu kurum, idari yetkilerinin kullanımını düzenlemekle ilgilenir ve bu yetk",
+52,Qwen/Qwen2.5-1.5B-Instruct,"Bir belediye başkanı, resmi toplantılarda başka bir dili kullanmayı zorunlu hale getirmiştir. Bu uygulama Anayasanın 3. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 3. Maddesi Türkiye Devleti'nin resmi dilinin Türkçe olduğunu belirtir. Resmi toplantılarda başka bir dil kullanmak bu maddeye aykırıdır.","**Anayasanın 3. Maddesinin** (1) **""ülkece kurallara uygun olmak""** veya (2) **""ülkede yer almak""** veya (3) **""ülkenin yasalarına uygun olmak",
+53,Qwen/Qwen2.5-1.5B-Instruct,"Bir belediye, yerel yönetimde herkesin yaşama hakkının sınırlandırılabileceğini kararlaştırmıştır. Bu uygulama Anayasanın 17. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 17. Maddesi, herkesin yaşama hakkına sahip olduğunu ve bu hakkın ancak kanunlarla düzenlenebileceğini vurgular. Bu tür bir uygulama Anayasa'ya aykırıdır.","**Anayasanın 17. Maddesi** genellikle yerel yönetim kurumlarının sınırları içinde hareket etmesini sağlar. Ancak bu durumu belirleyen bir anayasal maddi kanun yoktur. Bu nedenle,",
+54,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 80'e göre, milletvekillerinin türkiye'yi temsil etme yetkisinin sınırlandırılmasında hangi ilkeler gözetilir","Anayasa madde 80'e göre, milletvekillerinin türkiye'yi temsil etme yetkisinin sınırlandırılmasında kanunilik, demokratik toplum düzeninin gereklerine uygunluk ve ölçülülük ilkeleri gözetilir. bu sınırlamalar, milletvekillerinin temsil yetkisini ihlal etmemeli ve bireylerin demokratik temsiliyetini kısıtlamamalıdır.","1) Anayasa
+2) Milli Teşkilat
+3) Sivil Hükümet
+4) Devlet Hükümeti
+
+Bu soru, Türkiye'nin anayasal yapısındaki önemli bir konudur. Milletvekilleri,",
+55,Qwen/Qwen2.5-1.5B-Instruct,Kişinin rızası olmadan kişisel veriler hangi şartlarda işlenebilir?,"Kanunlarda açıkça öngörülmesi, fiili imkansızlık nedeniyle rızasını açıklayamayacak durumda olan kişinin hayatı veya beden bütünlüğünün korunması, bir sözleşmenin kurulması veya ifası için gerekli olması, veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi, ilgili kişinin kendisi tarafından alenileştirilmiş olması, bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması, veri sorumlusunun meşru menfaatleri için veri işlemenin zorunlu olması.","1. Hükümetin emriyle
+2. Şirketin emriyle
+3. İnsan hakları yasasıyla
+4. İnsan hakları yasası ile
+
+Bu sorunun doğru cevabı:
+
+**3. İnsan hakları yasası",
+56,Qwen/Qwen2.5-1.5B-Instruct,Vergi affı sonrasında borçların ödenmemesi durumunda ne olur?,"Vergi affı sonrasında borçların ödenmemesi durumunda, mükellef affın sağladığı avantajları kaybeder ve borç yeniden yapılandırılmadan önceki haline döner.","1. Vergi ödemesini reddetir
+2. Vergi ödemesini iptal eder
+3. Vergi ödemesini devam ettirir
+
+Bu sorunun doğru cevabı hangisidir? Soruyla ilgili belirli bir",
+57,Qwen/Qwen2.5-1.5B-Instruct,Bir kişi facebook üzerinden tehdit mesajları gönderdiğinde ne tür yasal işlemler yapılmalıdır?,"Facebook üzerinden tehdit mesajları gönderildiğinde, ilgili platforma şikayette bulunmalı ve yetkili makamlara suç duyurusunda bulunarak hukuki işlemleri başlatmalısınız.","Facebook'un genel politikası, kullanıcıların güvenliğini korumak ve onlara güvenli bir ortam sunmak için belirlenen yasal işlemlerdir. Bu yasal işlemler arasında, tehdit veya kötü davranışlarla ilgili yasaların",
+58,Qwen/Qwen2.5-1.5B-Instruct,Mülkiyetin devri nedir?,"Mülkiyetin devri, bir malın mülkiyetinin bir kişiden başka bir kişiye geçmesi işlemidir.","Mülkiyetin devri, mülkün sahipliği için belirlenen süre. Bu süre, mülkün sahip olduğu kişiye ait olurduktan sonra sona erer. 
+
+Bu soruyu cevaplayarak, mül",
+59,Qwen/Qwen2.5-1.5B-Instruct,Uluslararası yatırım hukuku nedir?,"Uluslararası yatırım hukuku, yabancı yatırımların korunması, teşvik edilmesi ve yönetimi ile ilgili kuralları belirleyen hukuk dalıdır. i̇kili yatırım anlaşmaları bu hukukun temelini oluşturur.","Uluslararası yatırım hukuku, uluslararası bir yatırım yapma sürecinde kullanılan hukuki kuralların ve düzenlemelerdir. Bu hukuki kurallar, ülkelerin işbirliği konusunda anlaşmalarını ve anlaşmazlıklarını belirtmektedir",
+60,Qwen/Qwen2.5-1.5B-Instruct,Tbmm üyeleri hangi tür işlerde çalışamaz ve hangi görevlerde bulunamazlar?,"Tbmm üyeleri, devlet ve diğer kamu tüzel kişilerinde ve bunlara bağlı kuruluşlarda; devletin veya diğer kamu tüzelkişilerinin doğrudan veya dolaylı olarak katıldığı teşebbüs ve ortaklıklarda; özel gelir kaynakları ve özel imkanları kanunla sağlanmış kamu yararına çalışan derneklerin ve devletten yardım sağlayan ve vergi muafiyeti olan vakıfların, kamu kurumu niteliğindeki meslek kuruluşları ile sendikalar ve bunların üst kuruluşlarının ve katıldıkları teşebbüs veya ortaklıkların yönetim ve denetim kurullarında görev alamazlar, vekili olamazlar, herhangi bir taahhüt işini doğrudan veya dolaylı olarak kabul edemezler, temsilcilik ve hakemlik yapamazlar. (madde 82)","Tbmm üyeleri işçilere ve işçilikten uzak tutulmaları için özel bir kurum olarak kabul edilmektedir. Bu nedenle, Tbmm üyeleri işçilere ve işçilikten uzak tutulmaları için",
+61,Qwen/Qwen2.5-1.5B-Instruct,Hakimler ve savcılar kurulu'nun uluslararası benzerleri nelerdir,"Hakimler ve savcılar kurulu'na benzer kurumlar, birçok ülkede yargı mensuplarının atanması, terfisi ve disiplin işlemlerini yürüten anayasal organlar olarak faaliyet gösterir.","1. Dünya Hakemlik Konseyi
+2. Dünya Savciliği Konseyi
+3. Dünya Hakemlik Kurumu
+4. Dünya Savciliği Kurumu
+
+Bu soruyla ilgili doğru cevaplar:
+
+a) 1 ve",
+62,Qwen/Qwen2.5-1.5B-Instruct,"Bir belediyedeki mahalli idare, belediye halkının mahalli müşterek ihtiyaçlarını karşılamak üzere kurulmuş ve karar organları seçimle işbaşına gelmemiştir. Bu durum Anayasanın 127. Maddesi'ne uygun mudur?","Hayır, Anayasanın 127. Maddesi, mahalli idarelerin belediye halkının mahalli müşterek ihtiyaçlarını karşılamak üzere kurulmasını ve karar organlarının seçimle işbaşına gelmesini öngörür. Bu durum maddeye aykırıdır.","**Anayasanın 127. Maddesi** genellikle:
+
+a) Şirketlerin işletmelerini yönetmek için kullanılan bir düzenlemeyi ifade eder.
+b) Mahallelerin yönetimindeki bir düzenlemeyi ifade ed",
+63,Qwen/Qwen2.5-1.5B-Instruct,İş yerinde performans düşüklüğü nedeniyle işten çıkarıldım haklarım nelerdir,Performans düşüklüğü nedeniyle işten çıkarıldıysanız i̇ş kanunu kapsamında çeşitli haklarınız bulunmaktadır öncelikle işvereninizin performans değerlendirmelerini ve uyarılarını inceleyin haksız bir işten çıkarma olduğunu düşünüyorsanız işe iade davası açabilirsiniz ayrıca kıdem tazminatı ihbar tazminatı ve diğer işçi alacaklarınızı talep edebilirsiniz,"İşyerindeki performans düşüklüğünden kaynaklanan işten çıkarılan kişinin hakları:
+
+1. İşten çıkarılan kişiye ailelerin haklarını korumak
+2. İşten çıkarılan kişiye ailesinin ihtiyaçlarını karşılamak
+3",
+64,Qwen/Qwen2.5-1.5B-Instruct,Anayasanın 34. Maddesi Sizce Neden Önemlidir?,Herkesin önceden izin almaksızın toplantı ve gösteri yürüyüşü düzenleme hakkına sahip olduğunu belirlediği için önemlidir.,"Anayasanın 34. Maddesi Sizce Neden Önemli Değil.
+
+Bu soruyla ilgili bir açıklama yapabilir miyim? Size yardımcı olmak için lütfen belirtin.
+Tabii ki, bu soruyu açıklam",
+65,Qwen/Qwen2.5-1.5B-Instruct,Nafaka ödemelerinde gecikmeler hakaret etme hakkı verir mi?,"Hayır, nafaka ödemelerindeki gecikmeler hakaret etme hakkını vermez. şikayet edebilirsiniz.","Hakaret etme hakkı vermez. Gecikmeler nöbetli bir durumda olabilir, ancak genel olarak nöbetlenmemektedir. 
+
+Bu sorunun tamamı:
+
+1) Soru: Nafaka ödemelerinde g",
+66,Qwen/Qwen2.5-1.5B-Instruct,Vatan hizmetinin yerine getirilmesinde vatandaşların sorumlulukları nelerdir,"Vatandaşlar, vatan hizmetini yerine getirmek, ulusal savunma ve güvenlik görevlerine katılmak ve yasalarla belirlenen hizmetleri yerine getirmekle sorumludur. bu, vatandaşlık bilincinin bir parçasıdır.","Vatan hizmetinin yerine getirilmesi için vatandaşların sorumluluğu:
+
+1. Hizmetin yerine getirileceği konusunda bilgi sahibi olmak
+2. Hizmetin yerine getirileceği konusunda",
+67,Qwen/Qwen2.5-1.5B-Instruct,"Müteahhit ile yapılan sözleşmede peşinat verildi, müteahhit cayma halinde 15 gün içinde ödeme yapacağını belirtti ama şimdi ödeme yapmıyor. ne yapmalıyım?",Noter aracılığıyla ihtarname gönderip sözleşmeyi feshedin. peşinatı geri almak için dava açmanız gerekebilir.,"Müteahhit, cayma halinde 15 gün içinde ödeme yapmamalı. 
+
+Bu sorunun doğru cevabı hangisidir?
+a) Müteahhit, cayma halinde 30 gün içinde ödeme yapmamalı.",
+68,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 104'e göre, cumhurbaşkanının görev ve yetkilerinin ihlali hangi durumlarda söz konusu olur","Anayasa madde 104'e göre, cumhurbaşkanının görev ve yetkilerinin ihlali, anayasa'nın uygulanmasını gözetmemesi veya devlet organlarının düzenli ve uyumlu çalışmasını sağlamaması durumunda söz konusu olur. devlet, bu tür ihlalleri önlemek ve cumhurbaşkanının görev ve yetkilerini korumakla yükümlüdür.","a) Cumhurbaşkanı'nın görevi ve yetkilerini ihlal etmek için yasal bir kanun bulunmamaktadır.
+b) Cumhurbaşkanı'nın görevi ve yetkilerini ihlal et",
+69,Qwen/Qwen2.5-1.5B-Instruct,Okulda çocuğuma yönelik ayrımcılık yapıldığını düşünüyorum ne yapmalıyım,"Anayasa'nın 42. maddesi eğitim hakkını güvence altına alır. çocuğunuza yönelik ayrımcılık yapıldığını düşünüyorsanız, okul yönetimiyle durumu görüşüp çözüm talep edebilir, çözüm bulamazsanız milli eğitim bakanlığı'na şikayette bulunabilirsiniz.","1) Okulunuzdan ayrılma
+2) Çocuğun okulu değiştirmek
+3) Çocuğun okulu tutmak
+4) Çocuğun okulu değiştirme hakkınız olmaksızın
+
+Bu soruyu cevap",
+70,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 47, devletleştirme ve özelleştirme işlemlerinin korunması için ne tür tedbirler alınacağını düzenler","Anayasa madde 47, devletleştirme ve özelleştirme işlemlerinin korunması için devletin, bu işlemleri anayasal ve kanuni düzenlemelere uygun olarak gerçekleştirmesini düzenler. devlet, devletleştirme ve özelleştirme işlemlerini adil ve hukuka uygun olarak gerçekleştirmek zorundadır.","1. Anayasa madde 47, devletleştirme ve özelleştirme işlemlerinin korunması için genel bir tedbir olarak ""Devletleşme ve özelleştirme kurumları"" oluşturulur.
+2. Bu kurumlar, devletleştirme ve",
+71,Qwen/Qwen2.5-1.5B-Instruct,Seyahat hürriyeti nedir,"Seyahat hürriyeti, bireylerin türkiye sınırları içinde ve yurt dışında serbestçe dolaşabilme ve seyahat edebilme özgürlüğünü ifade eder. bu hak, bireylerin hareket serbestisini güvence altına alır.","Seyahat hürriyeti, bir ülkede yaşayan insanlar için diğer ülkelerdeki yerlerin ziyaretini sağlama amacıyla kurulan bir hizmetdir. Bu hizmet, genellikle turistik ve sosyal amaçlı olup, insanların farklı",
+72,Qwen/Qwen2.5-1.5B-Instruct,"Apartman yönetimi, ödemeleri yapmadığında hangi hukuki adımları atabilir?","Ödemeleri yapmadığında, yönetici kararları uygulamak zorundadır ve ödeme yapılmasını sağlamak için yasal yollara başvurabilir.","1. Ödeme iptal edilmesi
+2. Ödeme iptali
+3. Ödeme iptali kaldırılması
+4. Ödeme iptali kaldırılması
+
+Bu sorunun doğru cevabı:
+
+1. Ödeme iptal edilmes",
+73,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 63'e göre, tarih, kültür ve tabiat varlıklarının korunması hakkının ihlali hangi durumlarda söz konusu olur","Anayasa madde 63'e göre, tarih, kültür ve tabiat varlıklarının korunması hakkının ihlali, bu varlıkların korunmasının hukuka aykırı olarak sınırlandırılması veya zarar görmesi durumunda söz konusu olur. devlet, bu tür ihlalleri önlemek ve tarih, kültür ve tabiat varlıklarının korunması hakkını korumakla yükümlüdür.","1) Tarihi kaynakları korumak
+2) Kültürü korumak
+3) Tabiatı korumak
+4) Tarihi kaynakları ve kültürleri korumak
+
+Bu soru, Türkiye Cumhuriyeti Anayasası'n",
+74,Qwen/Qwen2.5-1.5B-Instruct,"Mirasçılar, miras bırakanın borçlarını ödemek zorunda mıdır?","4721 sayılı Türk Medeni Kanunu'na göre, mirasçılar, miras bırakanın borçlarından miras payları oranında sorumludur. Yargıtay içtihatları, mirasçıların borçların ödenmesi konusunda hak ve yükümlülüklerini belirler.","Mirasçılar, miras bırakanın borçlarını ödememiz gerekmeyebilir. Bu durumda, mirasçıların borçlarını ödememesi, miras bırakıcının haklarına karşı bir zarar olabilir. Ancak, bu durumda",
+75,Qwen/Qwen2.5-1.5B-Instruct,"Bir sivil toplum kuruluşu, gençlerin korunma hakkının yasal dayanak olmaksızın kısıtlanması gerektiğini savunmaktadır. Bu durum Anayasanın 58. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 58. Maddesi Türkiye Devleti'nin, devletin gençleri koruma ve geliştirme yükümlülüğüne sahip olduğunu belirtir. Bu tür bir savunma Anayasa'ya aykırıdır.","**Anayasanın 58. Maddesi**:
+
+1. **Kurumsal Hizmetlere Ait Koruma**: Kurumsal hizmetlere ait koruma hakkını koruyor.
+2. **İnsanlar için Koruma**: İnsan",
+76,Qwen/Qwen2.5-1.5B-Instruct,Toplanma ve karar yeter sayısının belirlenmesindeki anayasal ilkeler nelerdir,"Anayasal ilkeler, tbmm'nin etkin ve demokratik bir şekilde çalışmasını sağlamak amacıyla toplanma ve karar yeter sayılarını belirler. bu ilkeler, yasama sürecinin düzenli işlemesini temin eder.","Anayasada genel olarak ""toplanma"" termine verilen bir kavramın belirlenmesi, karar yeter sayısının belirlenmesi, bu kavramın belirlenen bir kural veya kanun tarafından tanımlanması, veya",
+77,Qwen/Qwen2.5-1.5B-Instruct,Nişanlılığın bozulması nedeniyle hediyeleri geri talep edebilir miyim?,"Evet, türk medeni kanunu'na göre nişanlılık evlilik dışında bir sebeple sona ererse, nişanlılar birbirlerine vermiş oldukları hediyeleri geri talep edebilirler.","Hayır
+
+Bu sorunun cevabı doğru mu? Soruyla ilgili bir açıklama yapabilir misiniz?
+Cevap: Hayır. Nişanlılığın bozulması nedeniyle hediyeleri geri talep etme hakkı yoktur.",
+78,Qwen/Qwen2.5-1.5B-Instruct,Hakimlerin ve Savcıların Bağımsızlığı Hangi Anayasa Maddesinde Belirtilmiştir?,140. maddede.,"1. Hükümet Anayasası
+2. Sivil Anayasası
+3. Uluslararası Anayasası
+4. Tercih Edilen Anayasada
+
+Bu sorunun doğru cevabı hangisidir? Soruyla ilgili anlay",
+79,Qwen/Qwen2.5-1.5B-Instruct,"Eğer annemin üzerine olan taşınmazlar, yanlış beyanlarla diğer kardeşim tarafından alındıysa ne yapabilirim?","Miras payınızı korumak için tenkis davası açabilirsiniz. bu dava, mirasçıların saklı paylarını aşan tasarrufların iptalini talep etmenizi sağlar.","1) Annemle birlikte konuşmak
+2) Anneme bildirmek
+3) Başka bir arkadaşla konuşmak
+
+Bu sorunun doğru cevabı hangisidir? Soruyla ilgili en doğru cevap:
+
+A) 1)",
+80,Qwen/Qwen2.5-1.5B-Instruct,"Sanık, bir internet platformunda sahte haberler yayımlayarak kamuoyunu yanıltırsa, hangi suçlamalar gündeme gelir?","Sanık, internet platformunda sahte haberler yayımlayarak kamuoyunu yanıltırsa, 'yanıltıcı bilgi yayma', 'kamuoyunu yanıltma' ve 'medya etik kurallarını ihlal' suçlarıyla karşılaşabilir. Bu suçlar, hapis cezası ve/veya para cezası ile sonuçlanabilir ve yayımlanan bilgilerin düzeltilmesi gerekebilir.","Sanık, bu durumda:
+
+a) Sınır dışı yasağı ihlal eder.
+b) Yolsuzluk suçlaması ile karşılaşırlar.
+c) Halk Sağlığı Hukuku'nun belgelerine göre, yolsuz",
+81,Qwen/Qwen2.5-1.5B-Instruct,"Anayasa madde 33, dernek kurma hürriyetinin korunması için hangi güvenceler sağlar","Anayasa madde 33, dernek kurma hürriyetinin korunması için, kişilerin önceden izin almaksızın dernek kurma, derneğe üye olma ve üyelikten ayrılma özgürlüğünün anayasal güvence altında olduğunu belirterek güvenceler sağlar. bu hüküm, örgütlenme ve ifade hürriyetini güvence altına alır. devlet, dernek kurma hürriyetini korumak için gerekli tedbirleri almak zorundadır.","1. Anayasa madde 33, dernek kurma hürriyetinin korunması için hangi güvenceler sağlar
+2. Anayasa madde 33, dernek kurma hürriyetinin korunması için hangi",
+82,Qwen/Qwen2.5-1.5B-Instruct,Anayasanın değiştirilmesi teklif edilemeyecek hükümleri nelerdir?,"Anayasanın ilk üç maddesi, değiştirilmesi teklif edilemeyecek hükümlerdir.","Anayasanın değiştirilmesi teklif edilemeyecek hükümler, genellikle:
+
+1. Sivil hakları
+2. Halka ait haklar
+3. Eğitim hakları
+4. Sağlık hakları
+5. İnsan hakları
+6",
+83,Qwen/Qwen2.5-1.5B-Instruct,Kooperatif Ödemelerimizi Geri Almak İçin Dava Açarak Daha Kolay Alabilir Miyiz?,"Her Ortağın Kooperatiften Çıkma Hakkı Vardır. Çıkış, Ancak Bir Hesap Senesi Sonu İçin ve En Az 6 Ay Önceden Haber Verilerek Yapılır. Haklı ve Önemli Sebeplerin Varlığı Halinde Kooperatiften Çıkabilir ve Ödediklerinizi İsteyebilirsiniz.","**Evet**. Kooperatif ödemelerimizi geri almak için dava açmak kolay bir yol olmaz. Kooperatif ödemelerinizi geri almak için en iyi yoldağınız, bu örnekteki gibi, ko",
+84,Qwen/Qwen2.5-1.5B-Instruct,İş sözleşmesinde belirtilen şartlar değiştirilebilir mi?,"İş sözleşmesinde belirtilen şartlar, işveren ve işçinin karşılıklı anlaşmasıyla değiştirilebilir. ancak, işçinin rızası olmadan yapılan değişiklikler geçersizdir.","**Evet** (Evet) - **Hayır** (Hayır)
+
+Bu soru, iş sözleşmelerinin değişiklik yapma durumuna odaklanmaktadır. Bu konuda genel bir bilgiye bakalım:
+
+1. **İş Sözleşm",
+85,Qwen/Qwen2.5-1.5B-Instruct,Eşimle Aramızda Fiziksel Şiddet Olayı Oldu. Eşim Bana Tazminat Davası Açtı ve Ben de Boşanma Davası Açtım. Ne Olur?,"Her Ne Sebeple Olursa Olsun Eşe Uygulanan Fiziksel Şiddet, Boşanmada Erkeğin Kusurlu Sayılması İçin Yeterlidir. Eşinizin Sizi Tahrik Etmesi, Üstünüze Çok Gelmesi İse Sadece Tazminatta İndirime Yol Açar. Olayın Ayrıntıları Durumu Değiştirebilir. Ancak Bu Kısa Açıklamanıza Göre Sizin Boşanma Davanızın Red, Eşinizin Tazminat Davasının Kabul ile Sonuçlanması Yüksek İhtimaldir. Sonuç Olarak İşin Uzmanı Bir Avukattan Hukuki Yardım Almanızı Şiddetle Tavsiye Ederiz.","1) Boşanma davasının sonucu bir tazminat davaya dönüştürülmesi gerekiyor.
+2) Boşanma davasının sonucu bir tazminat davaya dönüştürülmesi gerekmez",
+86,Qwen/Qwen2.5-1.5B-Instruct,Anayasanın 12. Maddesi Hangi Konuyu Ele Alır?,Temel hak ve hürriyetleri ele alır.,"Anayasanın 12. Maddesi ""İnsanlar için Hizmet Sağlama"" konusuyla ele alınır. Bu maddi, insan hakları ve özgürlükleri korunması amacıyla belirlenen bir maddedir. 
+
+Bu madd",
+87,Qwen/Qwen2.5-1.5B-Instruct,"Bir siyasi parti, basın araçlarının belirli durumlarda devlet tarafından keyfi olarak el konulabileceğini savunmaktadır. Bu durum Anayasanın 30. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 30. Maddesi, basın araçlarının suç aleti olduğu gerekçesiyle zapt ve müsadere edilemeyeceğini belirtir. Bu tür bir savunma bu maddeye aykırıdır.","**Anayasanın 30. Maddesi** (İnsanlar Hakları Kanunu) genellikle insan haklarına ilişkin kurallar ve düzenlemeleri içerir. Ancak bu kanun, siyasetteki bir parti tarafından belirlenen ve dev",
+88,Qwen/Qwen2.5-1.5B-Instruct,"Bir üniversite profesörü, dersinde basın araçlarının keyfi olarak el konulabileceğini savunmuştur. Bu durum Anayasanın 30. Maddesi ile nasıl çelişir?","Anayasanın 30. Maddesi, basın araçlarının suç aleti olduğu gerekçesiyle zapt ve müsadere edilemeyeceğini belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 30. Maddesi, ""Kesinlikle ilgili bir eylemde bulunmayan veya bu eylemi gerçekleştiren kişinin yasalara uygun bir cezaya maruz kalmaması için yasal bir kan",
+89,Qwen/Qwen2.5-1.5B-Instruct,"Miras paylaşımında adaletsizlik yaşandıysa, hangi adımları atmalıyım?","Miras paylaşımında adaletsizlik yaşandıysa, bir avukata başvurarak dava açabilir ve paylaşımın düzeltilmesini talep edebilirsiniz.","1. Miras paylaşımı sırasında herhangi bir adaletle karşılaşırsanız, bu durumu sadece diğer tarafına bildirmelisiniz.
+2. Miras paylaşımı sırasında adaletsizlik yaşandığınızda, bu durumunuzla",
+90,Qwen/Qwen2.5-1.5B-Instruct,Hukukta 'tortfeasor' nedir?,"Tortfeasor, hukuka aykırı bir eylemde bulunan veya başkalarına zarar veren kişiyi ifade eder. bu terim, genellikle tazminat davalarında sorumlu taraf olarak kullanılır.","Tortfeasor, bir kişinin diğerinin işe yaramaz veya işten çıkarıcı olmasından kaynaklanan hataların tutulduğu tür bir hukuki durumdır. Tortfeasorunun belirlenmesi genellikle bir işteki",
+91,Qwen/Qwen2.5-1.5B-Instruct,Toplu iş sözleşmesi yapma hakkı neyi kapsar?,"İşçiler ve işverenler, karşılıklı olarak ekonomik ve sosyal durumlarını ve çalışma şartlarını düzenlemek amacıyla toplu iş sözleşmesi yapma hakkına sahiptirler. (madde 53)","Toplu iş sözleşmesi yapma hakkı, bir şirketin diğer şirketlerle ortak olarak iş yapmaya hakkıdır. Bu hak, şirketin diğer şirketlere iş yapma konusunda etik bir şekilde yardımcı olmak için kullanılır. İşte bu hakların bazı özellikleri",
+92,Qwen/Qwen2.5-1.5B-Instruct,"Bir grup siyasetçi, tarım arazilerinin herhangi bir yasal dayanak olmadan kısıtlanabileceğini savunmaktadır. Bu durum Anayasanın 45. Maddesi'ne aykırı mıdır?","Evet, Anayasanın 45. Maddesi Türkiye Devleti'nin, tarım arazilerinin amaçlarına uygun şekilde kullanılmasını sağlamak için gerekli tedbirleri alacağını belirtir. Bu tür bir savunma Anayasa'ya aykırıdır.",**Anayasanın 45. Maddesi** (Tarım Arazi İstihbarat ve Kalkınma Kanunu) genellikle tarım arazilerinin herhangi bir yasal dayanak olmadan kısıtlanmamasını sağlar,
+93,Qwen/Qwen2.5-1.5B-Instruct,Anayasanın 84. Maddesi Hangi Tarihte Yürürlüğe Girmiştir?,7 Kasım 1982'de yürürlüğe girmiştir.,"1950
+
+Bu soruyla ilgili aşağıdaki bilgilere bakınız:
+
+- Anayasanın 84. Maddesi ""Kendine Uygun Yaşlılar"" adı verilen bir türün kurallarına yer verir.
+- Bu",
+94,Qwen/Qwen2.5-1.5B-Instruct,Türkiye cumhuriyeti'nin devlet şekli nedir,"Türkiye cumhuriyeti'nin devlet şekli cumhuriyettir. bu, devletin halkın egemenliği altında olduğunu ve yöneticilerin seçimle iş başına geldiğini ifade eder.","Türkiye Cumhuriyeti'nin devlet şekli, bir devlet olarak tanımlanır. Bu durumda, hükümet, parlamento ve meclis kuralları, siyaset, finansal ve sosyal düzenlemeler, vatandaşlar için hizmetler",
+95,Qwen/Qwen2.5-1.5B-Instruct,Sanayi malları için satış sonrası hizmetler nasıl olmalıdır?,"Sanayi mallarının kullanım ömrü boyunca, bakım ve onarım hizmetleri sunmak için yeterli teknik personel ve yedek parça bulundurulmalıdır.","Sanayi mallarının satış sonrası hizmetleri, sanayi mallarının satışı sırasında kullanılan maliyetlerin bir parçası olarak değerlendirilir. Bu hizmetler, malların satışı sırasında yapılan işlerin bir parçasıdır. İşte daha",
+96,Qwen/Qwen2.5-1.5B-Instruct,"Bir grup vatandaş, aile birliğinin korunmasının devlet tarafından keyfi olarak kısıtlanabileceğini savunmaktadır. Bu durum Anayasanın 41. Maddesi ile nasıl çelişir?","Anayasanın 41. Maddesi, ailenin Türk toplumunun temeli olduğunu ve devletin, ailenin huzur ve refahını sağlamak için gerekli tedbirleri alacağını belirtir. Bu tür bir savunma bu maddeye aykırıdır.","Anayasanın 41. Maddesi, ""Kurumsal ve sosyal düzenin korunması"" konusuyla ilgili değildir.
+Anayasanın 41. Maddesi, ""Kurumsal ve sosyal düzenin korunması"" konusu",
+97,Qwen/Qwen2.5-1.5B-Instruct,Sıkıyönetim Cumhurbaşkanının başkanlığında toplanan Bakanlar Kurulu kararı ile ilan edilmiştir. Bu durum Anayasanın 122. Maddesi'ne uygun mudur?,"Evet, Anayasanın 122. Maddesi, sıkıyönetimin Cumhurbaşkanının başkanlığında toplanan Bakanlar Kurulu kararı ile ilan edilebileceğini belirtir. Bu durum maddeye uygundur.","**Anayasanın 122. Maddesi** genellikle:
+
+a) Bakanların görevlerini değiştirme hakkına sahip olan bir kurulun kararı ile ilgili değildir.
+b) Bakanların görevlerini değiştirme hakkına sahip olan bir kurul",
+98,Qwen/Qwen2.5-1.5B-Instruct,Kira artışı nasıl yapılır?,"Kira artışı, kira sözleşmesinde belirtilen oranlarda ve yasal sınırlamalar çerçevesinde yapılır. genellikle yıllık olarak uygulanır.","Kira artışı, kira sahipliği sırasında belirli bir süre boyunca borçlanan maliyeti azaltmak için yapılan bir işlemdir. Bu işlem, borçlanan maliyetin %10-25'ye kadar düşmesine yardımcı ol",
+99,Qwen/Qwen2.5-1.5B-Instruct,Kamu denetçiliği kurumu'nun kararları bağlayıcı mıdır,"Kamu denetçiliği kurumu'nun kararları bağlayıcı değildir, ancak kamu idareleri için tavsiye niteliği taşır. i̇dareler, kurumun önerilerini dikkate alarak sorunların çözümüne yönelik adımlar atabilirler.","Küresel kamu denetçiliği kurumu'nun kararları bağlayıcı değildir. Bu kurum, genellikle belirli bir konuda veya duruma ilişkin kararlar verirken, bu kararların herhangi bir etkiye sahip olm",
