@@ -2,6 +2,7 @@ import argparse
 import os
 import time
 
+import bitsandbytes  # must be imported before torch on Windows to avoid CUDA crash
 import pandas as pd
 import torch
 from datasets import load_dataset
@@ -45,6 +46,10 @@ def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 60) -
         truncation=True,
         max_length=1024
     )
+
+    # Move inputs to the same device as the model.
+    device = next(model.parameters()).device
+    inputs = {k: v.to(device) for k, v in inputs.items()}
 
     # No training here. We only generate model outputs.
     with torch.no_grad():
@@ -133,11 +138,15 @@ def main():
     print("\nLoading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
 
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    dtype = torch.float16 if device == "cuda" else torch.float32
+    print(f"Device: {device} | dtype: {dtype}")
+
     print("Loading model...")
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
-        dtype=torch.float32,
-        device_map=None,
+        dtype=dtype,
+        device_map="auto" if device == "cuda" else None,
     )
 
     # Evaluation mode: no training, only inference.
