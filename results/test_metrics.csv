@@ -1,0 +1,2 @@
+model_name,examples,avg_rouge1,avg_rouge2,avg_rouge_l,avg_bleu,avg_chrf,avg_tfidf_similarity,avg_bertscore_f1,error_count,input_file
+meta-llama/Llama-3.2-3B-Instruct,100,0.2789,0.1515,0.2392,0.1039,0.3159,0.1969,0.8707,0,results/llama_3_2_3b_baseline_outputs_100.csv

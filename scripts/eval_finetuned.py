@@ -14,7 +14,7 @@ import argparse
 import os
 import time
 
-import bitsandbytes  # must be imported before torch on Windows to avoid CUDA crash
+import bitsandbytes  # must be before torch on Windows, CUDA can fail otherwise
 import pandas as pd
 import torch
 from datasets import load_dataset
@@ -27,6 +27,7 @@ SYSTEM_PROMPT = "Aşağıdaki Türkçe hukuk sorusunu kısa, açık ve doğru ş
 
 
 def build_prompt(tokenizer, question: str) -> str:
+    # same prompt style with baseline, keep it same for fair compare.
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": question},
@@ -55,12 +56,13 @@ def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 100) 
             pad_token_id=tokenizer.eos_token_id,
         )
 
-    # Decode only the newly generated tokens (not the prompt).
+    # decode only new tokens, not the prompt.
     new_tokens = outputs[0][inputs["input_ids"].shape[1]:]
     return tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
 
 def save_results(results, output_path):
+    # simple csv save, later can be improved like baseline temp save.
     os.makedirs("results", exist_ok=True)
     pd.DataFrame(results).to_csv(output_path, index=False, encoding="utf-8")
 
@@ -79,12 +81,14 @@ def main():
     output_path = f"results/{args.model_short_name}_outputs_{args.num_examples}.csv"
 
     # --- Load tokenizer ---
+    # adapter folder also has tokenizer, this is more consistent.
     print("Loading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(args.finetuned_path)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
     # --- Load base model + LoRA adapter ---
+    # first load base model, then attach LoRA weights.
     print("Loading base model...")
     base_model = AutoModelForCausalLM.from_pretrained(
         args.base_model_name,
@@ -97,6 +101,7 @@ def main():
     model.eval()
 
     # --- Dataset ---
+    # again only test split, training data is not used here.
     print("Loading dataset...")
     dataset = load_dataset(DATASET_NAME)
     test_data = dataset["test"]
@@ -107,12 +112,15 @@ def main():
 
     try:
         for i in tqdm(range(args.num_examples)):
+            # get question and reference answer from same index.
             question = test_data[i]["Soru"]
             reference_answer = test_data[i]["Cevap"]
             try:
+                # model answer produced here, deterministic because do_sample false.
                 answer = generate_answer(model, tokenizer, question, args.max_new_tokens)
                 error = ""
             except Exception as e:
+                # if one sample fail write error and continue.
                 answer = ""
                 error = str(e)
 

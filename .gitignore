@@ -23,6 +23,17 @@ huggingface/
 
 # Local dataset exports
 data/*.csv
+data/*.jsonl
+
+# Large per-run output CSVs (keep only summary)
+results/*_outputs_*.csv
+results/*.tmp
+
+# Submission zip
+*.zip
+
+# Claude Code session files
+.claude/
 
 # Temporary files
 *.log

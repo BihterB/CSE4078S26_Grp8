@@ -1,15 +1,17 @@
 import pandas as pd
 
-# This helper script prints a few model outputs.
-# I used it for quickly comparing question, reference answer and model answer.
+# This helper prints few model outputs to terminal.
+# quick look only, serious metric degil just inspect.
 
 FILES = [
-    "results/qwen_1_5b_baseline_outputs_25.csv",
-    "results/gemma_2_2b_it_baseline_outputs_25.csv",
+    "results/qwen_1_5b_baseline_outputs_1500.csv",
+    "results/llama_3_2_3b_baseline_outputs_1500.csv",
+    "results/llama_3_2_3b_finetuned_outputs_1500.csv",
 ]
 
 
 def print_examples(file_path, n=3):
+    # print first n examples from one csv for easy compare.
     print("=" * 80)
     print("File:", file_path)
     print("=" * 80)
@@ -17,6 +19,7 @@ def print_examples(file_path, n=3):
     df = pd.read_csv(file_path)
 
     for i in range(min(n, len(df))):
+        # row has question reference and model answer.
         row = df.iloc[i]
 
         print("\nExample", i + 1)
@@ -37,6 +40,7 @@ def main():
         try:
             print_examples(file_path)
         except FileNotFoundError:
+            # if output not generated yet just tell and continue.
             print("File not found:", file_path)
 
 

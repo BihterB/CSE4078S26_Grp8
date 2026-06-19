@@ -1,6 +1,6 @@
 import argparse
 import os
-import bitsandbytes  # must be first on Windows
+import bitsandbytes  # must be first on Windows, CUDA import can fail
 import torch
 from datasets import load_dataset
 from peft import LoraConfig, TaskType, get_peft_model, prepare_model_for_kbit_training
@@ -34,6 +34,7 @@ def main():
     print(f"LoRA  : r={args.lora_r}, alpha={args.lora_alpha}")
 
     # --- Tokenizer ---
+    # tokenizer converts text to token ids for model.
     print("\nLoading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
     if tokenizer.pad_token is None:
@@ -41,6 +42,7 @@ def main():
     tokenizer.padding_side = "right"
 
     # --- QLoRA quantization config (4-bit) ---
+    # 4-bit uses less GPU memory, this is main QLoRA part.
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_use_double_quant=True,
@@ -49,6 +51,7 @@ def main():
     )
 
     # --- Load base model in 4-bit ---
+    # load base model here, training not started yet.
     print("Loading model in 4-bit (QLoRA)...")
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
@@ -59,7 +62,8 @@ def main():
     model = prepare_model_for_kbit_training(model)
 
     # --- LoRA config ---
-    # target_modules covers attention + MLP for Llama / Qwen / Phi architectures.
+    # target_modules are attention + MLP layers.
+    # not later bakarsan r alpha values report ile ayni mi kontrol et.
     lora_config = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
         r=args.lora_r,
@@ -75,12 +79,15 @@ def main():
     model.print_trainable_parameters()
 
     # --- Dataset ---
+    # only train split is used here, test split yok dikkat.
     print("\nLoading dataset...")
     dataset = load_dataset(DATASET_NAME)
     train_data = dataset["train"]
     print(f"Train examples: {len(train_data)}")
 
     def format_example(example):
+        # make one training sample as chat conversation.
+        # user question then assistant answer, model learns this pattern.
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": example["Soru"]},
@@ -99,6 +106,8 @@ def main():
     )
 
     # --- Training config ---
+    # hyperparameters are here, use same values in report.
+    # burayi unutma geri doncen bakman lazim epochs batch lr ayni mi diye.
     training_args = SFTConfig(
         output_dir=args.output_dir,
         num_train_epochs=args.num_epochs,
@@ -125,10 +134,12 @@ def main():
     )
 
     # --- Train ---
+    # actual fine-tuning starts here, this part can be long.
     print(f"\nStarting training ({len(train_dataset)} examples, {args.num_epochs} epochs)...")
     trainer.train(resume_from_checkpoint=args.resume or None)
 
     # --- Save ---
+    # save only LoRA adapters, not full model.
     print("\nSaving fine-tuned LoRA adapters...")
     os.makedirs(args.output_dir, exist_ok=True)
     trainer.save_model(args.output_dir)

@@ -1,0 +1,300 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+\begin{document}
+
+\title{Fine-Tuning Small LLMs for Turkish Legal Question Answering:\\
+A QLoRA-Based Approach}
+
+\author{
+  \IEEEauthorblockN{Group 8 --- CSE4078 Spring 2026}
+  \IEEEauthorblockA{
+    Ayşegül Bihter Banuşoğlu (150119777) \quad Kaan Camcı (150119063) \\
+    Yakup Mert Aslan (150119765) \quad Muhammed Taha Serdar (150122604) \quad Muhammet Akyüz (150120028)
+  }
+}
+
+\maketitle
+
+% ---------------------------------------------------------------
+\begin{abstract}
+This paper presents an evaluation and fine-tuning study of small open-source large language
+models (LLMs) for Turkish legal question answering. We evaluate two models in the 1B--4B
+parameter range---Qwen2.5-1.5B-Instruct and Llama-3.2-3B-Instruct---as baselines on the
+\textit{Renicames/turkish-law-chatbot} dataset. We then fine-tune Llama-3.2-3B-Instruct
+using Quantized Low-Rank Adaptation (QLoRA) on the full 13,354-example training split
+for five epochs. Evaluation on the 1,500-example test split using seven automatic metrics
+(ROUGE-1/2/L, BLEU, chrF++, TF-IDF similarity, and BERTScore F1) shows substantial
+improvements across all metrics after fine-tuning. Our fine-tuned model achieves a ROUGE-L
+of 0.5874 compared to 0.2506 for the Llama baseline and 0.2126 for Qwen, demonstrating that
+lightweight parameter-efficient fine-tuning can significantly close the gap between
+general-purpose and domain-specific legal QA in Turkish.
+\end{abstract}
+
+% ---------------------------------------------------------------
+\section{Introduction}
+
+Turkish is a morphologically rich, agglutinative language that poses unique challenges for
+natural language processing systems. Despite recent advances in multilingual LLMs, Turkish
+legal question answering remains an underexplored task. Legal texts in Turkish are
+particularly demanding due to formal register, complex sentence structures, and
+domain-specific vocabulary.
+
+Recent work has shown that parameter-efficient fine-tuning methods such as
+LoRA~\cite{hu2022lora} and QLoRA~\cite{dettmers2023qlora} can adapt general-purpose LLMs to
+specialized domains without the computational cost of full fine-tuning. These methods are
+especially attractive for small models in the 1B--4B parameter range that can be trained
+on consumer GPUs.
+
+In this work, we conduct a systematic study of two small open-source LLMs on Turkish legal
+QA. Our contributions are:
+\begin{itemize}
+  \item A comparative baseline evaluation of Qwen2.5-1.5B-Instruct and
+    Llama-3.2-3B-Instruct on a Turkish legal QA benchmark.
+  \item A QLoRA fine-tuning pipeline for Llama-3.2-3B-Instruct on the
+    \textit{turkish-law-chatbot} corpus.
+  \item A comprehensive evaluation using seven automatic metrics on a 1,500-example test
+    split, providing a reproducible benchmark for future work.
+  \item An error analysis comparing model outputs before and after fine-tuning.
+\end{itemize}
+
+\subsection{Related Work}
+
+Instruction-tuned LLMs such as LLaMA~\cite{touvron2023llama} and Qwen~\cite{bai2023qwen}
+have demonstrated strong multilingual capability. However, their Turkish legal domain
+performance without explicit fine-tuning remains limited.
+LoRA~\cite{hu2022lora} introduced low-rank decomposition of weight matrices for
+parameter-efficient fine-tuning. QLoRA~\cite{dettmers2023qlora} extended this approach by
+combining 4-bit quantization with LoRA, enabling fine-tuning of large models on single
+consumer GPUs. We follow the QLoRA approach in this work.
+Multilingual evaluation metrics such as BERTScore~\cite{zhang2020bertscore} with
+XLM-RoBERTa~\cite{conneau2020xlmroberta} and character-level metrics like
+chrF++~\cite{popovic2017chrf} are more suitable for agglutinative languages like Turkish
+than standard BLEU, and we include both in our evaluation.
+
+% ---------------------------------------------------------------
+\section{Experiment Setup}
+
+\subsection{Dataset}
+
+We use the \textit{Renicames/turkish-law-chatbot} dataset~\cite{turkishlawchatbot}, which
+contains 14,900 Turkish legal question-answer pairs. The dataset is split into a training
+set of 13,354 examples and a test set of 1,500 examples under the Apache-2.0 license.
+Each example consists of a question (\textit{Soru}) and a reference answer (\textit{Cevap})
+in Turkish. The training split was used exclusively for fine-tuning; the test split was
+held out and used only for evaluation.
+
+We applied no additional preprocessing beyond the chat template formatting described below.
+We verified that no examples from the test split appear in the training data, ensuring a
+clean train/test separation.
+
+\subsection{Baseline Models}
+
+We selected two instruction-tuned models in the 1B--4B parameter range:
+
+\begin{itemize}
+  \item \textbf{Qwen2.5-1.5B-Instruct}~\cite{bai2023qwen}: A 1.5B parameter model from
+    the Qwen2.5 series, optimized for instruction following and multilingual tasks.
+  \item \textbf{Llama-3.2-3B-Instruct}~\cite{touvron2023llama}: A 3B parameter model
+    from Meta's Llama 3.2 series with strong multilingual performance.
+\end{itemize}
+
+Both models were loaded in BFloat16 precision with \texttt{device\_map="auto"} for GPU
+inference. Prompts were formatted using each model's native chat template with a shared
+system prompt instructing the model to answer Turkish legal questions concisely and
+accurately.
+
+\subsection{Fine-Tuning}
+
+We selected Llama-3.2-3B-Instruct for fine-tuning based on its stronger baseline
+performance. Fine-tuning was performed using QLoRA~\cite{dettmers2023qlora} with the
+following configuration:
+
+\begin{itemize}
+  \item \textbf{Quantization}: 4-bit NF4 with double quantization
+    (\texttt{BitsAndBytesConfig})
+  \item \textbf{LoRA rank}: $r = 16$, $\alpha = 32$, dropout $= 0.05$
+  \item \textbf{Target modules}: \texttt{q\_proj}, \texttt{k\_proj}, \texttt{v\_proj},
+    \texttt{o\_proj}, \texttt{gate\_proj}, \texttt{up\_proj}, \texttt{down\_proj}
+  \item \textbf{Optimizer}: AdamW with cosine learning rate schedule
+  \item \textbf{Learning rate}: $2 \times 10^{-4}$, warmup ratio $= 0.03$
+  \item \textbf{Batch size}: 4, gradient accumulation steps: 4 (effective batch size 16)
+  \item \textbf{Epochs}: 5
+  \item \textbf{Max sequence length}: 512 tokens
+  \item \textbf{Precision}: BFloat16
+\end{itemize}
+
+Training examples were formatted using the Llama chat template with a Turkish system prompt:
+\textit{``Aşağıdaki Türkçe hukuk sorusunu kısa, açık ve doğru şekilde cevapla.''} Training
+was performed using the TRL library~\cite{vonwerra2022trl} (\texttt{SFTTrainer}) on an
+NVIDIA RTX 3090 (24 GB VRAM). The total training time was approximately 5 hours.
+
+\subsection{Evaluation}
+
+All models were evaluated on the full 1,500-example test split using seven automatic metrics:
+
+\begin{itemize}
+  \item \textbf{ROUGE-1, ROUGE-2, ROUGE-L}~\cite{lin2004rouge}: Unigram overlap, bigram
+    overlap, and longest common subsequence between prediction and reference.
+  \item \textbf{BLEU}~\cite{papineni2002bleu}: N-gram precision with effective-order
+    brevity penalty (via SacreBLEU).
+  \item \textbf{chrF++}~\cite{popovic2017chrf}: Character n-gram F-score with word order
+    (\texttt{word\_order=2}), well-suited for agglutinative languages such as Turkish.
+  \item \textbf{TF-IDF Cosine Similarity}: Cosine similarity between TF-IDF vectors of
+    prediction and reference, measuring lexical overlap at the corpus level.
+  \item \textbf{BERTScore F1}~\cite{zhang2020bertscore}: Contextual embedding similarity
+    using XLM-RoBERTa-base with \texttt{lang="tr"}, capturing semantic similarity beyond
+    exact token matches.
+\end{itemize}
+
+All text was lowercased and whitespace-normalized before metric computation. Generation was
+performed greedily (\texttt{do\_sample=False}) with a maximum of 100 new tokens.
+
+% ---------------------------------------------------------------
+\section{Experiment Results}
+
+\subsection{Quantitative Results}
+
+Table~\ref{tab:results} presents the evaluation results for all three models on the
+1,500-example test split.
+
+\begin{table*}[t]
+\centering
+\caption{Evaluation results on the Turkish Legal QA test set (1,500 examples).
+All scores are averages over the test split. Higher is better for all metrics.}
+\label{tab:results}
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{ROUGE-1} & \textbf{ROUGE-2} & \textbf{ROUGE-L} &
+\textbf{BLEU} & \textbf{chrF++} & \textbf{TF-IDF} & \textbf{BERTScore F1} \\
+\midrule
+Qwen2.5-1.5B-Instruct (baseline)     & 0.2609 & 0.1271 & 0.2126 & 0.0688 & 0.2810 & 0.1648 & 0.8667 \\
+Llama-3.2-3B-Instruct (baseline)     & 0.2896 & 0.1597 & 0.2506 & 0.1002 & 0.2802 & 0.1979 & 0.8740 \\
+Llama-3.2-3B-Instruct (fine-tuned)   & \textbf{0.6186} & \textbf{0.5163} & \textbf{0.5874} & \textbf{0.4720} & \textbf{0.6038} & \textbf{0.5419} & \textbf{0.9369} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The fine-tuned model substantially outperforms both baselines across all metrics. Compared
+to the Llama-3.2-3B baseline, fine-tuning yields a ROUGE-L improvement from 0.2506 to
+0.5874 (+134.4\%), a BLEU improvement from 0.1002 to 0.4720 (+371.1\%), and a BERTScore
+F1 improvement from 0.8740 to 0.9369 (+7.2 points).
+
+The two baseline models perform comparably, with Llama-3.2-3B-Instruct holding a small
+advantage on most metrics despite having twice the parameters of Qwen2.5-1.5B-Instruct.
+This is consistent with the expectation that the larger model has better instruction
+following and Turkish language capability.
+
+\subsection{Error Analysis}
+
+To better understand model behavior, we examined representative outputs from each model.
+
+\textbf{Baseline models} tend to produce plausible but generic answers that do not match
+the specific legal facts in the reference answer. For example, when asked about the
+conditions for filing a lawsuit, baseline models often give general procedural descriptions
+while the reference answer cites specific articles of Turkish law. Both baseline models
+sometimes respond with structured bullet points or introductory phrases that are not present
+in the reference, lowering n-gram overlap metrics even when the semantic content is broadly
+correct.
+
+\textbf{The fine-tuned model} produces answers that are stylistically and semantically much
+closer to the reference answers. It correctly reproduces specific legal terminology, article
+references, and answer lengths consistent with the dataset distribution. The main failure
+modes observed after fine-tuning are: (1) occasional over-repetition of key phrases when
+the question is ambiguous, and (2) answers that are slightly longer than the reference,
+which mildly penalizes precision-based metrics.
+
+The high BERTScore F1 of the baseline models (0.8667--0.8740) relative to their low BLEU
+scores (0.0688--0.1002) confirms that the baselines understand the semantic topic but
+cannot reproduce the exact vocabulary and phrasing expected by the dataset. Fine-tuning
+closes this gap dramatically.
+
+% ---------------------------------------------------------------
+\section{Conclusion}
+
+We presented a study of QLoRA-based fine-tuning for Turkish legal question answering.
+Starting from two competitive small LLMs---Qwen2.5-1.5B-Instruct and
+Llama-3.2-3B-Instruct---we showed that five epochs of QLoRA fine-tuning on 13,354 examples
+from the \textit{turkish-law-chatbot} corpus yields substantial gains across seven automatic
+metrics. The fine-tuned Llama-3.2-3B model achieves a ROUGE-L of 0.5874 and a BLEU of
+0.4720 on the 1,500-example test split, compared to 0.2506 and 0.1002 for the untuned
+baseline.
+
+These results confirm that lightweight parameter-efficient fine-tuning is highly effective
+for domain adaptation of small LLMs to Turkish legal QA. Future work could explore longer
+training, data augmentation, or retrieval-augmented generation to further improve factual
+accuracy on complex legal questions.
+
+% ---------------------------------------------------------------
+\begin{thebibliography}{00}
+
+\bibitem{hu2022lora}
+E. J. Hu, Y. Shen, P. Wallis, Z. Allen-Zhu, Y. Li, S. Wang, L. Wang, and W. Chen,
+``LoRA: Low-Rank Adaptation of Large Language Models,''
+\textit{Proc. ICLR}, 2022.
+
+\bibitem{dettmers2023qlora}
+T. Dettmers, A. Pagnoni, A. Holtzman, and L. Zettlemoyer,
+``QLoRA: Efficient Finetuning of Quantized LLMs,''
+\textit{Proc. NeurIPS}, 2023.
+
+\bibitem{touvron2023llama}
+H. Touvron et al.,
+``Llama 2: Open Foundation and Fine-Tuned Chat Models,''
+\textit{arXiv preprint arXiv:2307.09288}, 2023.
+
+\bibitem{bai2023qwen}
+J. Bai et al.,
+``Qwen Technical Report,''
+\textit{arXiv preprint arXiv:2309.16609}, 2023.
+
+\bibitem{turkishlawchatbot}
+Renicames,
+``turkish-law-chatbot,''
+Hugging Face Datasets, 2023.
+[Online]. Available: \url{https://huggingface.co/datasets/Renicames/turkish-law-chatbot}
+
+\bibitem{lin2004rouge}
+C.-Y. Lin,
+``ROUGE: A Package for Automatic Evaluation of Summaries,''
+\textit{Proc. ACL Workshop}, 2004.
+
+\bibitem{papineni2002bleu}
+K. Papineni, S. Roukos, T. Ward, and W. Zhu,
+``BLEU: a Method for Automatic Evaluation of Machine Translation,''
+\textit{Proc. ACL}, 2002.
+
+\bibitem{popovic2017chrf}
+M. Popovic,
+``chrF++: words helping character n-grams,''
+\textit{Proc. WMT}, 2017.
+
+\bibitem{zhang2020bertscore}
+T. Zhang, V. Kishore, F. Wu, K. Q. Weinberger, and Y. Artzi,
+``BERTScore: Evaluating Text Generation with BERT,''
+\textit{Proc. ICLR}, 2020.
+
+\bibitem{conneau2020xlmroberta}
+A. Conneau et al.,
+``Unsupervised Cross-lingual Representation Learning at Scale,''
+\textit{Proc. ACL}, 2020.
+
+\bibitem{vonwerra2022trl}
+L. von Werra et al.,
+``TRL: Transformer Reinforcement Learning,''
+GitHub, 2022.
+[Online]. Available: \url{https://github.com/huggingface/trl}
+
+\end{thebibliography}
+
+\end{document}

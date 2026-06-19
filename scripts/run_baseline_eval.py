@@ -9,37 +9,29 @@ from datasets import load_dataset
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# This script is the main baseline evaluation script.
-# It runs one selected model on the Turkish legal QA test split.
-# Then it saves model answers together with reference answers.
+# Main baseline eval script.
+# It take one model and ask Turkish law questions from test split.
+# burayı unutma sonra README ile ayni mi diye geri don bakman lazim.
 
-# Mandatory dataset for Group 8.
-# Group 8 is even-numbered, so this dataset is used in the project.
+# Our mandatory dataset for group 8.
+# Group 8 is even number so this dataset is used.
 DATASET_NAME = "Renicames/turkish-law-chatbot"
+SYSTEM_PROMPT = "Aşağıdaki Türkçe hukuk sorusunu kısa, açık ve doğru şekilde cevapla."
 
 
-def build_prompt(question: str) -> str:
-    """
-    Creates the prompt given to the model.
-    Same prompt is used for all baseline models for a fair comparison.
-    """
-    return f"""Aşağıdaki Türkçe hukuk sorusunu kısa, açık ve doğru şekilde cevapla.
-
-Soru:
-{question}
-
-Cevap:"""
+def build_prompt(tokenizer, question: str) -> str:
+    # make prompt with chat template, same format as finetuned eval.
+    # burada prompt degisirse results also change dikkat et.
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": question},
+    ]
+    return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
 
-def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 60) -> str:
-    """
-    Generates one answer for one question.
-    We use do_sample=False because baseline outputs should be more stable.
-    """
-    prompt = build_prompt(question)
+def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 100) -> str:
+    prompt = build_prompt(tokenizer, question)
 
-    # Tokenize prompt text.
-    # Truncation is used as a small safety check for long questions.
     inputs = tokenizer(
         prompt,
         return_tensors="pt",
@@ -47,11 +39,10 @@ def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 60) -
         max_length=1024
     )
 
-    # Move inputs to the same device as the model.
+    # move tokens to same device as model.
     device = next(model.parameters()).device
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
-    # No training here. We only generate model outputs.
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
@@ -60,12 +51,9 @@ def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 60) -
             pad_token_id=tokenizer.eos_token_id,
         )
 
-    # Convert generated token ids back to normal text.
-    full_output = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-    # Try to remove the original prompt from the generated text.
-    # kendime not: bazen model promptu da geri yaziyor, o yuzden temizliyorum.
-    answer = full_output.replace(prompt, "").strip()
+    # decode only answer part not the prompt.
+    new_tokens = outputs[0][inputs["input_ids"].shape[1]:]
+    answer = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
     return answer
 
@@ -73,20 +61,22 @@ def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 60) -
 def save_results(results, output_path):
     """
     Saves current results to CSV.
-    We call this after every example so partial results are not lost
-    if the script is stopped.
+    bunu ara ara call ediyoruz run stop olursa emek gitmesin diye.
     """
-    os.makedirs("results", exist_ok=True)
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
+    # temp file first then replace, OneDrive sometimes locks file.
+    tmp_path = output_path + ".tmp"
     df = pd.DataFrame(results)
-    df.to_csv(output_path, index=False, encoding="utf-8")
+    df.to_csv(tmp_path, index=False, encoding="utf-8")
+    os.replace(tmp_path, output_path)
 
 
 def main():
     parser = argparse.ArgumentParser()
 
-    # Model name from Hugging Face.
-    # Example: Qwen/Qwen2.5-1.5B-Instruct
+    # model name from HuggingFace, given from command line.
+    # example can be Qwen or Llama.
     parser.add_argument(
         "--model_name",
         type=str,
@@ -94,7 +84,7 @@ def main():
         help="Hugging Face model name, for example Qwen/Qwen2.5-1.5B-Instruct",
     )
 
-    # Short name is used only for naming output files.
+    # short name only for output csv name, not model behavior.
     parser.add_argument(
         "--model_short_name",
         type=str,
@@ -102,8 +92,8 @@ def main():
         help="Short name used in output file, for example qwen_1_5b",
     )
 
-    # Number of test examples.
-    # For progress stage, we use a smaller fixed subset because local runs are slow.
+    # how many test example will run.
+    # small number is useful for debug because local run is slow.
     parser.add_argument(
         "--num_examples",
         type=int,
@@ -111,20 +101,26 @@ def main():
         help="Number of test examples to evaluate.",
     )
 
-    # Max answer length.
-    # Lower value makes local evaluation faster.
+    # max answer length, lower value is faster but answer can be cut.
     parser.add_argument(
         "--max_new_tokens",
         type=int,
         default=60,
         help="Maximum number of new tokens generated by the model.",
     )
+    parser.add_argument(
+        "--offset",
+        type=int,
+        default=0,
+        help="Skip first N examples (use to resume after a crash).",
+    )
 
     args = parser.parse_args()
 
-    output_path = f"results/{args.model_short_name}_baseline_outputs_{args.num_examples}.csv"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    output_path = os.path.join(base_dir, "results", f"{args.model_short_name}_baseline_outputs_{args.num_examples}.csv")
 
-    # Load dataset and use only the test split for baseline evaluation.
+    # load dataset and use only test split, train buraya girmemeli.
     print("Loading dataset...")
     dataset = load_dataset(DATASET_NAME)
     test_data = dataset["test"]
@@ -133,13 +129,14 @@ def main():
     print(f"Using first {args.num_examples} examples for this baseline run.")
     print(f"Output file: {output_path}")
 
-    # Load tokenizer and model.
-    # The same script works for Qwen and Gemma by changing model_name.
+    # load tokenizer and model.
+    # same script works for Qwen and Llama, just change model_name.
     print("\nLoading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    dtype = torch.float16 if device == "cuda" else torch.float32
+    # bfloat16 is safer for Llama, float16 crashed in some CUDA runs.
+    dtype = torch.bfloat16 if device == "cuda" else torch.float32
     print(f"Device: {device} | dtype: {dtype}")
 
     print("Loading model...")
@@ -149,18 +146,22 @@ def main():
         device_map="auto" if device == "cuda" else None,
     )
 
-    # Evaluation mode: no training, only inference.
+    # eval mode, no training here.
     model.eval()
 
+    # if crash happened we can continue from here.
     results = []
+    if args.offset > 0 and os.path.exists(output_path):
+        existing = pd.read_csv(output_path)
+        results = existing.to_dict("records")
+        print(f"Loaded {len(results)} existing results, resuming from index {args.offset}.")
 
     print("\nRunning baseline evaluation...")
     start_time = time.time()
 
     try:
-        for i in tqdm(range(args.num_examples)):
-            # Dataset columns are Turkish:
-            # "Soru" is the question, "Cevap" is the reference answer.
+        for i in tqdm(range(args.offset, args.num_examples)):
+            # dataset columns Turkish, Soru question Cevap gold answer.
             question = test_data[i]["Soru"]
             reference_answer = test_data[i]["Cevap"]
 
@@ -175,8 +176,7 @@ def main():
                 error_message = ""
 
             except Exception as e:
-                # If one example fails, we keep going.
-                # This prevents one error from stopping the whole baseline run.
+                # if one example fail keep going.
                 model_answer = ""
                 error_message = str(e)
 
@@ -191,11 +191,12 @@ def main():
                 }
             )
 
-            # Save after each example. This is useful because local model runs can be slow.
-            save_results(results, output_path)
+            # save every 50 examples, too much save makes OneDrive weird sometimes.
+            if len(results) % 50 == 0:
+                save_results(results, output_path)
 
     except KeyboardInterrupt:
-        # If we stop the script manually, already generated answers are still saved.
+        # if ctrl c happens generated answers still saved.
         print("\nRun interrupted by user.")
         print("Saving partial results before exit...")
         save_results(results, output_path)
@@ -205,7 +206,7 @@ def main():
     end_time = time.time()
     elapsed_time = end_time - start_time
 
-    # Final save after all examples are completed.
+    # final save writes latest results to csv.
     save_results(results, output_path)
 
     print("\nBaseline evaluation finished.")

@@ -9,20 +9,21 @@ from sacrebleu.metrics import BLEU, CHRF
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# This script takes model output CSV files (from run_baseline_eval.py or eval_finetuned.py)
-# and computes 7 metrics for each model. Results go into a summary CSV.
-# Run it like: python scripts/compute_metrics.py --input_files results/a.csv results/b.csv --output_file results/summary.csv
+# This script takes output CSV files and calculate metrics.
+# It compares model answers with reference answers.
+# burayi unutma final numbers README ve report ile ayni olmali.
 
 DEFAULT_INPUT_FILES = [
-    "results/qwen_1_5b_baseline_outputs_100.csv",
-    "results/llama_3_2_3b_baseline_outputs_100.csv",
+    "results/qwen_1_5b_baseline_outputs_1500.csv",
+    "results/llama_3_2_3b_baseline_outputs_1500.csv",
+    "results/llama_3_2_3b_finetuned_outputs_1500.csv",
 ]
 
-DEFAULT_OUTPUT_FILE = "results/baseline_summary.csv"
+DEFAULT_OUTPUT_FILE = "results/summary_1500.csv"
 
 
 def normalize_text(text: str) -> str:
-    # lowercase + extra boşlukları temizle, skorları tutarlı yapmak için
+    # Lowercase and clean extra spaces for stable scores.
     if pd.isna(text):
         return ""
     text = str(text).lower()
@@ -31,7 +32,7 @@ def normalize_text(text: str) -> str:
 
 
 def compute_tfidf_similarity(reference: str, prediction: str) -> float:
-    # TF-IDF vectors for two texts, then cosine similarity between them
+    # TF-IDF vectors for two texts then cosine similarity, simple lexical score.
     reference = normalize_text(reference)
     prediction = normalize_text(prediction)
     if not reference or not prediction:
@@ -42,23 +43,23 @@ def compute_tfidf_similarity(reference: str, prediction: str) -> float:
 
 
 def compute_bleu(references: list, predictions: list) -> float:
-    # BLEU with effective_order=True so short outputs don't get unfairly penalized
+    # BLEU score, effective_order true is better for short answers.
     bleu = BLEU(effective_order=True)
     result = bleu.corpus_score(predictions, [references])
-    return round(result.score / 100, 4)  # sacrebleu returns 0-100, we normalize to 0-1
+    return round(result.score / 100, 4)  # sacrebleu gives 0-100, normalize to 0-1.
 
 
 def compute_chrf(references: list, predictions: list) -> float:
-    # chrF++ — karakter + kelime sırası birlikte bakıyor
-    # Türkçe gibi eklemeli diller için BLEU'dan daha güvenilir
+    # chrF++ checks character and word order together.
+    # Türkçe için useful because words have many suffixes.
     chrf = CHRF(word_order=2)
     result = chrf.corpus_score(predictions, [references])
     return round(result.score / 100, 4)
 
 
 def compute_bertscore(references: list, predictions: list) -> float:
-    # xlm-roberta-base: 100+ dil destekliyor, Türkçe dahil
-    # F1 skorunu alıyoruz — precision ve recall'ın harmonik ortalaması
+    # xlm-roberta-base supports many languages including Turkish.
+    # We take F1 score, average of precision and recall style.
     _, _, F1 = bert_score(predictions, references, lang="tr", model_type="xlm-roberta-base", verbose=False)
     return round(F1.mean().item(), 4)
 
@@ -66,7 +67,7 @@ def compute_bertscore(references: list, predictions: list) -> float:
 def evaluate_file(input_path: str) -> dict:
     df = pd.read_csv(input_path)
 
-    # rouge1: unigram overlap, rouge2: bigram, rougeL: longest common subsequence
+    # rouge1 unigram, rouge2 bigram, rougeL longest common subsequence.
     scorer = rouge_scorer.RougeScorer(["rouge1", "rouge2", "rougeL"], use_stemmer=False)
 
     rouge1_scores = []
@@ -80,7 +81,7 @@ def evaluate_file(input_path: str) -> dict:
         ref = row["reference_answer"]
         pred = row["model_answer"]
         ref_norm = normalize_text(ref)
-        pred_norm = normalize_text(pred) if normalize_text(pred) else " "  # boş cevap varsa skor 0 olsun
+        pred_norm = normalize_text(pred) if normalize_text(pred) else " "  # empty answer should score 0.
 
         if ref_norm and pred_norm:
             s = scorer.score(ref_norm, pred_norm)
@@ -97,7 +98,7 @@ def evaluate_file(input_path: str) -> dict:
         predictions.append(pred_norm)
 
     model_name = df["model_name"].iloc[0]
-    # error column has the exception message if generation failed, empty string if ok
+    # error column filled means generation failed.
     error_count = df["error"].fillna("").astype(str).str.len().gt(0).sum()
 
     n = len(rougel_scores)
@@ -132,6 +133,7 @@ def main():
     summaries = []
 
     for input_file in args.input_files:
+        # each csv is one model result file.
         if not os.path.exists(input_file):
             print(f"Skipping missing file: {input_file}")
             continue
